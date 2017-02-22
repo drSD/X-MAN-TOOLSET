@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='fxman.xcore.metamodel' version='2.1.0.201511251205'>
+    <update id='fxman.xcore.metamodel' range='[0.0.0,2.1.0.201511251205)' severity='0'/>
+    <properties size='6'>
+      <property name='org.eclipse.equinox.p2.name' value='FX-MAN MetaModel'/>
+      <property name='org.eclipse.equinox.p2.provider' value='The University of Manchester'/>
+      <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      <property name='maven-groupId' value='uk.fxman.tool'/>
+      <property name='maven-artifactId' value='fxman.xcore.metamodel'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+    </properties>
+    <provides size='17'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='fxman.xcore.metamodel' version='2.1.0.201511251205'/>
+      <provided namespace='osgi.bundle' name='fxman.xcore.metamodel' version='2.1.0.201511251205'/>
+      <provided namespace='java.package' name='fxman.metamodel.helper' version='0.0.0'/>
+      <provided namespace='java.package' name='org.paukov.combinatorics' version='0.0.0'/>
+      <provided namespace='java.package' name='org.paukov.combinatorics.combination.multi' version='0.0.0'/>
+      <provided namespace='java.package' name='org.paukov.combinatorics.combination.simple' version='0.0.0'/>
+      <provided namespace='java.package' name='org.paukov.combinatorics.composition' version='0.0.0'/>
+      <provided namespace='java.package' name='org.paukov.combinatorics.partition' version='0.0.0'/>
+      <provided namespace='java.package' name='org.paukov.combinatorics.permutations' version='0.0.0'/>
+      <provided namespace='java.package' name='org.paukov.combinatorics.subsets' version='0.0.0'/>
+      <provided namespace='java.package' name='org.paukov.combinatorics.util' version='0.0.0'/>
+      <provided namespace='java.package' name='org.paukov.examples' version='0.0.0'/>
+      <provided namespace='java.package' name='org.paukov.tool' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.fxman' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.fxman.impl' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.fxman.util' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='9'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xcore.lib' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='xman.xcore.metamodel' range='0.1.0'/>
+      <required namespace='osgi.bundle' name='org.junit' range='4.11.0'/>
+      <required namespace='java.package' name='org.apache.commons.lang3' range='0.0.0'/>
+      <required namespace='java.package' name='uk.man.xman.project.console' range='0.0.0'/>
+      <required namespace='java.package' name='uk.man.xman.project.support' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='fxman.xcore.metamodel' version='2.1.0.201511251205'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: fxman.xcore.metamodel;singleton:=true&#xA;Bundle-Version: 2.1.0.201511251205&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

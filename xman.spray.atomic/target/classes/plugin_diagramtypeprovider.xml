@@ -1,0 +1,12 @@
+<diagramTypeProvider
+  class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.diagram.AtomicDesignDiagramTypeProvider"
+  description="This is my editor for the AtomicDesign diagram type"
+  id="xman.spray.atomic.diagram.AtomicDesignDiagramTypeProvider"
+  name="AtomicDesign editor">
+  <diagramType
+        id="xman.spray.atomic.diagram.AtomicDesignDiagramType">
+  </diagramType>
+    <imageProvider
+           id="xman.spray.atomic.diagram.AtomicDesignImageProvider">
+     </imageProvider>
+</diagramTypeProvider>

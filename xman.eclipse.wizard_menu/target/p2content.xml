@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='xman.eclipse.wizard_menu' version='2.1.0.201511251205'>
+    <update id='xman.eclipse.wizard_menu' range='[0.0.0,2.1.0.201511251205)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='X-MAN Wizard and Menu'/>
+      <property name='org.eclipse.equinox.p2.provider' value='The University of Manchester'/>
+      <property name='maven-groupId' value='uk.xman.tool'/>
+      <property name='maven-artifactId' value='xman.eclipse.wizard_menu'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+    </properties>
+    <provides size='7'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='xman.eclipse.wizard_menu' version='2.1.0.201511251205'/>
+      <provided namespace='osgi.bundle' name='xman.eclipse.wizard_menu' version='2.1.0.201511251205'/>
+      <provided namespace='java.package' name='uk.man.xman.menu' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.man.xman.menu.preferences' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.man.xman.wizard.project' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.eclipse.wizard_menu' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='10'>
+      <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.apache.log4j' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='xman.commons' range='1.0.0'/>
+      <required namespace='java.package' name='org.eclipse.core.resources' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.jdt.core' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.jdt.launching' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.jdt.ui' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.ui.console' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='xman.eclipse.wizard_menu' version='2.1.0.201511251205'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: xman.eclipse.wizard_menu;singleton:=true&#xA;Bundle-Version: 2.1.0.201511251205&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

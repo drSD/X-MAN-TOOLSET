@@ -1,0 +1,58 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: fxman.spray.architecture; singleton:=true
+Export-Package: fxman.handler;uses:="org.eclipse.core.commands",fxman.
+ spray.architecture; uses:="org.osgi.framework,  com.google.inject,  o
+ rg.eclipse.xtext.service,  org.eclipse.ui.plugin",fxman.spray.archite
+ cture.compiler;uses:="org.eclipse.emf.common.util,uk.fxman",fxman.spr
+ ay.architecture.diagram; uses:="org.eclipse.graphiti.dt,  org.eclipse
+ .graphiti.features,  org.eclipse.graphiti.features.context,  uk.fxman
+ ,  org.eclipse.graphiti.mm.algorithms,  org.eclipselabs.spray.runtime
+ .graphiti.features,  org.eclipse.graphiti.palette,  org.eclipselabs.s
+ pray.runtime.graphiti.tb,  org.eclipse.graphiti.mm.pictograms,  org.e
+ clipse.graphiti.services,  org.eclipselabs.spray.runtime.graphiti,  o
+ rg.eclipse.graphiti.ui.platform",fxman.spray.architecture.features; u
+ ses:="org.eclipse.graphiti.features,  org.eclipse.graphiti.ui.feature
+ s,  org.eclipse.graphiti.features.context,  uk.fxman,  org.eclipse.gr
+ aphiti.mm.algorithms,  org.eclipselabs.spray.runtime.graphiti.feature
+ s,  fxman.spray.architecture.diagram,  org.eclipselabs.spray.runtime.
+ graphiti.shape,  org.eclipse.graphiti.mm.pictograms,  org.eclipse.gra
+ phiti.features.impl,  org.eclipse.graphiti.services",fxman.spray.arch
+ itecture.gradients;uses:="org.eclipse.graphiti.mm.algorithms.styles,o
+ rg.eclipse.graphiti.util,org.eclipselabs.spray.runtime.graphiti.style
+ s",fxman.spray.architecture.helper; uses:="org.eclipse.emf.ecore,  or
+ g.eclipse.graphiti.features,  org.eclipse.emf.common.util,  uk.fxman"
+ ,fxman.spray.architecture.internal;x-internal:=true,fxman.spray.archi
+ tecture.property; uses:="org.eclipse.graphiti.mm.pictograms,  org.ecl
+ ipse.swt.widgets,  uk.fxman,  org.eclipse.graphiti.ui.platform,  org.
+ eclipse.ui.views.properties.tabbed",fxman.spray.architecture.shape; u
+ ses:="org.eclipse.graphiti.features,  org.eclipse.graphiti.mm.pictogr
+ ams,  org.eclipselabs.spray.runtime.graphiti.styles,  org.eclipselabs
+ .spray.runtime.graphiti.shape",fxman.spray.architecture.shapes; uses:
+ ="org.eclipse.graphiti.features,  org.eclipse.graphiti.mm.pictograms,
+   org.eclipselabs.spray.runtime.graphiti.styles,  org.eclipselabs.spr
+ ay.runtime.graphiti.shape",fxman.spray.architecture.styles;uses:="org
+ .eclipse.graphiti.mm.algorithms.styles,org.eclipse.graphiti.mm.pictog
+ rams,org.eclipselabs.spray.runtime.graphiti.styles"
+Bundle-Name: fxman.spray.architecture
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
+ f.ecore,org.eclipse.graphiti;bundle-version="0.10.0",org.eclipse.grap
+ hiti.mm;bundle-version="0.10.0",org.eclipse.graphiti.pattern;bundle-v
+ ersion="0.10.0",org.eclipse.graphiti.ui;bundle-version="0.10.0",org.e
+ clipselabs.spray.runtime.graphiti,org.eclipselabs.spray.shapes,org.ec
+ lipselabs.spray.styles,org.eclipse.ui.views.properties.tabbed;bundle-
+ version="3.5.200",org.eclipse.emf;bundle-version="2.6.0",org.eclipse.
+ emf.transaction;bundle-version="1.4.0",com.google.guava;bundle-versio
+ n="10.0.1",com.google.inject;bundle-version="3.0.0",javax.inject;bund
+ le-version="1.0.0",fxman.xcore.metamodel,xman.commons,org.junit,fxman
+ .commons;bundle-version="2.1.0"
+Bundle-ManifestVersion: 2
+Bundle-Activator: fxman.spray.architecture.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: The University of Manchester
+Import-Package: org.apache.commons.logging,org.apache.log4j,org.eclips
+ e.xtext.service,org.eclipse.xtext.ui.editor,org.eclipse.xtext.ui.guic
+ e,org.eclipse.xtext.ui.resource,org.eclipse.xtext.util,org.eclipse.xt
+ ext.xbase.lib,org.eclipselabs.spray.styles.generator.util
+

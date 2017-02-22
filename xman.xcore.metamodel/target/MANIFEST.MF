@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.xcore.metamodel;singleton:=true
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibil
+ ity:=reexport,org.eclipse.xtext.xbase.lib;visibility:=reexport,org.ec
+ lipse.core.resources,org.eclipse.ui.workbench,org.apache.log4j,org.ec
+ lipse.emf.ecore.xcore.lib
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+Import-Package: org.apache.commons.lang,org.eclipse.ui.ide
+Export-Package: org.apache.commons.lang3,org.apache.commons.lang3.buil
+ der,org.apache.commons.lang3.concurrent,org.apache.commons.lang3.even
+ t,org.apache.commons.lang3.exception,org.apache.commons.lang3.math,or
+ g.apache.commons.lang3.mutable,org.apache.commons.lang3.reflect,org.a
+ pache.commons.lang3.text,org.apache.commons.lang3.text.translate,org.
+ apache.commons.lang3.time,org.apache.commons.lang3.tuple,uk.xman.exte
+ nsion_points,uk.xman.helpers,uk.xman.xcore,uk.xman.xcore.impl,uk.xman
+ .xcore.util
+Bundle-Name: X-MAN MetaModel
+Bundle-Version: 2.1.0.201511251205
+Bundle-ClassPath: .,lib/commons-lang3-3.0.1.jar
+Bundle-Localization: plugin
+

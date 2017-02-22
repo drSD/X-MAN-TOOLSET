@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='fxman.xcore.repository' version='2.1.0.201511251205'>
+    <update id='fxman.xcore.repository' range='[0.0.0,2.1.0.201511251205)' severity='0'/>
+    <properties size='6'>
+      <property name='org.eclipse.equinox.p2.name' value='FX-MAN Repository Model'/>
+      <property name='org.eclipse.equinox.p2.provider' value='The University Of Manchester'/>
+      <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      <property name='maven-groupId' value='uk.xman.tool'/>
+      <property name='maven-artifactId' value='fxman.xcore.repository'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+    </properties>
+    <provides size='6'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='fxman.xcore.repository' version='2.1.0.201511251205'/>
+      <provided namespace='osgi.bundle' name='fxman.xcore.repository' version='2.1.0.201511251205'/>
+      <provided namespace='java.package' name='uk.fxman.repository' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.fxman.repository.impl' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.fxman.repository.util' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='6'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xcore.lib' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='xman.xcore.metamodel' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='fxman.xcore.metamodel' range='2.1.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='fxman.xcore.repository' version='2.1.0.201511251205'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: fxman.xcore.repository;singleton:=true&#xA;Bundle-Version: 2.1.0.201511251205&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

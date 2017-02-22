@@ -1,0 +1,4 @@
+<imageProvider
+      class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.diagram.AtomicDesignImageProvider"
+         id="xman.spray.atomic.diagram.AtomicDesignImageProvider">
+</imageProvider>

@@ -1,0 +1,12 @@
+<diagramTypeProvider
+  class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.diagram.FamilyArchitectureDesignDiagramTypeProvider"
+  description="This is my editor for the FamilyArchitectureDesign diagram type"
+  id="fxman.spray.architecture.diagram.FamilyArchitectureDesignDiagramTypeProvider"
+  name="FamilyArchitectureDesign editor">
+  <diagramType
+        id="fxman.spray.architecture.diagram.FamilyArchitectureDesignDiagramType">
+  </diagramType>
+    <imageProvider
+           id="fxman.spray.architecture.diagram.FamilyArchitectureDesignImageProvider">
+     </imageProvider>
+</diagramTypeProvider>

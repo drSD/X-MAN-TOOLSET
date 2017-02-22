@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: fxman.eclipse.test.CDOManagerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.391 sec - in fxman.eclipse.test.CDOManagerTest
+resourceShouldBeGetOrCreated(fxman.eclipse.test.CDOManagerTest)  Time elapsed: 18.109 sec
+testRemoveAsset(fxman.eclipse.test.CDOManagerTest)  Time elapsed: 12.996 sec
+testRemoveDomain(fxman.eclipse.test.CDOManagerTest)  Time elapsed: 0.49 sec
+testDepositFamilyArchitecture(fxman.eclipse.test.CDOManagerTest)  Time elapsed: 1.273 sec
+transactionShouldBeOpen(fxman.eclipse.test.CDOManagerTest)  Time elapsed: 0.329 sec
+testDepositAsset(fxman.eclipse.test.CDOManagerTest)  Time elapsed: 0.497 sec
+testDepositDomain(fxman.eclipse.test.CDOManagerTest)  Time elapsed: 0.654 sec

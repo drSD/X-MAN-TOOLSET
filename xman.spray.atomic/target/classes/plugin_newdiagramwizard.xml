@@ -1,0 +1,17 @@
+<extension
+      point="org.eclipse.ui.newWizards">
+      <category
+         name="AtomicDesign"
+         id="org.eclipselabs.spray.AtomicDesign">
+         </category>
+   <wizard
+         category="org.eclipselabs.spray.AtomicDesign"
+         class="xman.spray.atomic.internal.ExecutableExtensionFactory:org.eclipselabs.spray.runtime.graphiti.wizard.NewDiagramWizard"
+         descriptionImage="icons/AtomicDesign-32.png"
+         icon="icons/AtomicDesign-16.png"
+         id="org.eclipselabs.spray.AtomicDesign.NewDiagramWizard"
+         name="New AtomicDesign Diagram"
+         preferredPerspectives="org.eclipse.graphiti.examples.common.perspective.GFPerspective"
+         project="false">
+   </wizard>
+</extension>

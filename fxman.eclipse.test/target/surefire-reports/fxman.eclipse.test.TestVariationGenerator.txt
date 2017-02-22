@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: fxman.eclipse.test.TestVariationGenerator
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in fxman.eclipse.test.TestVariationGenerator
+TestGenericOR2(fxman.eclipse.test.TestVariationGenerator)  Time elapsed: 0.067 sec
+TestGenericOrAlt(fxman.eclipse.test.TestVariationGenerator)  Time elapsed: 0.001 sec
+TestAlt(fxman.eclipse.test.TestVariationGenerator)  Time elapsed: 0.001 sec
+TestOpt(fxman.eclipse.test.TestVariationGenerator)  Time elapsed: 0.001 sec
+TestGenericOr(fxman.eclipse.test.TestVariationGenerator)  Time elapsed: 0.001 sec

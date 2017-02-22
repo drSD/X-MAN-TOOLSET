@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.commons
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.ui
+ .console;bundle-version="3.5.200",org.eclipse.graphiti.ui,org.eclipse
+ .core.resources;bundle-version="3.8.101",org.eclipse.graphiti,org.ecl
+ ipse.emf.transaction,org.eclipse.jdt.core,org.eclipse.jdt.ui,org.ecli
+ pse.ui.ide,xman.xcore.metamodel;bundle-version="0.1.0",org.apache.log
+ 4j
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+Import-Package: org.apache.commons.lang
+Export-Package: org.apache.commons.lang3,uk.man.xman.project.console,u
+ k.man.xman.project.feature,uk.man.xman.project.feature.helper,uk.man.
+ xman.project.markers,uk.man.xman.project.support,uk.xman.dialogs
+Bundle-Name: X-MAN Commons
+Bundle-Version: 2.1.0.201511251205
+Bundle-ClassPath: .,lib/commons-lang3-3.0.1.jar
+Bundle-Activator: xman.commons.Activator
+

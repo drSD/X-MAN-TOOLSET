@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='xman.cdo.repository' version='2.1.0.201511251205'>
+    <update id='xman.cdo.repository' range='[0.0.0,2.1.0.201511251205)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='X-MAN Repository'/>
+      <property name='org.eclipse.equinox.p2.provider' value='The University of Manchester'/>
+      <property name='maven-groupId' value='uk.xman.tool'/>
+      <property name='maven-artifactId' value='xman.cdo.repository'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+    </properties>
+    <provides size='10'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='xman.cdo.repository' version='2.1.0.201511251205'/>
+      <provided namespace='osgi.bundle' name='xman.cdo.repository' version='2.1.0.201511251205'/>
+      <provided namespace='java.package' name='uk.xman.repository.handlers' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.cdo.repository' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.cdo.repository.preferences' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.repository.helpers' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.repository.viewer.dialogs' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.repository.viewer.dnd' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.repository.viewer.views' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='21'>
+      <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xcore.lib' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.graphiti' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.cdo' range='4.2.1'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.cdo.net4j' range='4.1.101'/>
+      <required namespace='osgi.bundle' name='org.eclipse.net4j.tcp' range='4.1.101'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.transaction' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='xman.xcore.metamodel' range='2.0.0'/>
+      <required namespace='osgi.bundle' name='xman.xcore.repository' range='2.0.0'/>
+      <required namespace='osgi.bundle' name='org.apache.log4j' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='com.google.inject' range='3.0.0'/>
+      <required namespace='java.package' name='org.apache.commons.lang3' range='0.0.0'/>
+      <required namespace='java.package' name='org.junit' range='4.11.0'/>
+      <required namespace='java.package' name='uk.man.xman.project.console' range='0.0.0'/>
+      <required namespace='java.package' name='uk.man.xman.project.support' range='0.0.0'/>
+      <required namespace='java.package' name='uk.xman.extension_points' range='0.0.0'/>
+      <required namespace='java.package' name='xman.spray.atomic.diagram' range='0.0.0'/>
+      <required namespace='java.package' name='xman.spray.composite.diagram' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='xman.cdo.repository' version='2.1.0.201511251205'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: xman.cdo.repository;singleton:=true&#xA;Bundle-Version: 2.1.0.201511251205&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.eclipse.wizard_menu;singleton:=true
+Export-Package: uk.man.xman.menu;uses:="org.osgi.framework,org.eclipse
+ .ui.plugin",uk.man.xman.menu.preferences;uses:="org.eclipse.ui,org.ec
+ lipse.jface.preference,org.eclipse.core.runtime.preferences",uk.man.x
+ man.wizard.project; uses:="org.osgi.framework,  org.eclipse.ui.dialog
+ s,  org.eclipse.ui.wizards.newresource,  org.eclipse.ui.plugin",xman.
+ eclipse.wizard_menu;uses:="org.eclipse.ui"
+Bundle-Name: X-MAN Wizard and Menu
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.ui
+ .ide,org.apache.log4j,xman.commons;bundle-version="1.0.0"
+Bundle-ManifestVersion: 2
+Bundle-Activator: uk.man.xman.wizard.project.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+Import-Package: org.eclipse.core.resources,org.eclipse.jdt.core,org.ec
+ lipse.jdt.launching,org.eclipse.jdt.ui,org.eclipse.ui.console
+

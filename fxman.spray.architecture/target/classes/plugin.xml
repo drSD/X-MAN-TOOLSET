@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+ Generated on Thu Feb 16 16:18:23 GMT 2017 by Spray Plugin.xtend
+ This file will be generated only once if it need to be regenerated, remove this file.
+ 
+-->
+<plugin>
+  
+  <!-- GRAPHITI EDITOR EXTENSION AUTOGEN START -->
+  <!-- Potentially redefine the EDITOR EXTENSION TO ALLOW FOR OUR OWN EDITOR SUBCLASS TO BE USED. 
+  <extension
+        point="org.eclipse.ui.editors">
+     <editor
+         class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.diagram.FamilyArchitectureDesignDiagramEditor"
+         contributorClass="org.eclipse.graphiti.ui.editor.DiagramEditorActionBarContributor"
+         default="true"
+         extensions="diagram"
+         icon="icons/diagram.gif"
+         id="fxman.spray.architecture.diagram.FamilyArchitectureDesignDiagramEditor"
+         matchingStrategy="org.eclipse.graphiti.ui.editor.DiagramEditorFactory$DiagramEditorMatchingStrategy"
+         name="%_diagram_editor_name">
+      <contentTypeBinding
+            contentTypeId="org.eclipse.graphiti.content.diagram">
+      </contentTypeBinding>
+     </editor>
+  </extension>
+  -->
+  <!-- GRAPHITI EDITOR EXTENSION AUTOGEN END -->
+  
+  <extension
+       point="org.eclipse.graphiti.ui.diagramTypes">
+    <!-- DIAGRAM TYPE AUTOGEN START -->
+    <diagramType
+      description="This is the diagram type for the FamilyArchitectureDesign diagram type"
+      id="fxman.spray.architecture.diagram.FamilyArchitectureDesignDiagramType"
+      name="FamilyArchitectureDesign Graphiti Diagram Type"
+      type="FamilyArchitectureDesign">
+    </diagramType>
+    <!-- DIAGRAM TYPE AUTOGEN END -->
+  </extension>
+  
+  <extension
+       point="org.eclipse.graphiti.ui.diagramTypeProviders">
+    <!-- DIAGRAM TYPE PROVIDER AUTOGEN START -->
+    <diagramTypeProvider
+      class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.diagram.FamilyArchitectureDesignDiagramTypeProvider"
+      description="This is my editor for the FamilyArchitectureDesign diagram type"
+      id="fxman.spray.architecture.diagram.FamilyArchitectureDesignDiagramTypeProvider"
+      name="FamilyArchitectureDesign editor">
+      <diagramType
+            id="fxman.spray.architecture.diagram.FamilyArchitectureDesignDiagramType">
+      </diagramType>
+        <imageProvider
+               id="fxman.spray.architecture.diagram.FamilyArchitectureDesignImageProvider">
+         </imageProvider>
+    </diagramTypeProvider>
+    <!-- DIAGRAM TYPE PROVIDER AUTOGEN END -->
+  </extension>
+  
+  <extension
+       point="org.eclipse.graphiti.ui.imageProviders">
+    <!-- IMAGE PROVIDER AUTOGEN START -->
+    <imageProvider
+          class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.diagram.FamilyArchitectureDesignImageProvider"
+             id="fxman.spray.architecture.diagram.FamilyArchitectureDesignImageProvider">
+    </imageProvider>
+    <!-- IMAGE PROVIDER AUTOGEN END -->
+  </extension>
+  
+  <extension
+       point="org.eclipse.ui.views.properties.tabbed.propertyContributor">
+    <propertyContributor contributorId="FamilyArchitectureDesign.PropertyContributor">
+       <propertyCategory category="FamilyArchitectureDesignCategory">
+       </propertyCategory>
+    </propertyContributor>
+  </extension>
+  
+  <extension
+       point="org.eclipse.ui.views.properties.tabbed.propertyTabs">
+    <propertyTabs contributorId="FamilyArchitectureDesign.PropertyContributor">
+      <!-- PROPERTY TAB AUTOGEN START -->
+      <propertyTab label="Main" category="FamilyArchitectureDesignCategory"
+          id="FamilyArchitectureDesign.main.tab">
+      </propertyTab>
+      <!-- PROPERTY TAB AUTOGEN END -->
+    </propertyTabs>
+  </extension>
+  
+  <!-- PROPERTY SECTIONS AUTOGEN START -->
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    <propertySection tab="FamilyArchitectureDesign.main.tab"
+     class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FXMANArchitectureInstanceNameSection"
+     filter="fxman.spray.architecture.property.FXMANArchitectureInstanceFilter"
+     id="FamilyArchitectureDesign.main.tab.FXMANArchitectureInstance.name">
+    </propertySection>
+      </propertySections>
+  </extension>
+  
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+      </propertySections>
+  </extension>
+  
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+      </propertySections>
+  </extension>
+  
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+      </propertySections>
+  </extension>
+  
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    <propertySection tab="FamilyArchitectureDesign.main.tab"
+     class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilySequencerNameSection"
+     filter="fxman.spray.architecture.property.FamilySequencerFilter"
+     id="FamilyArchitectureDesign.main.tab.FamilySequencer.name">
+    </propertySection>
+      </propertySections>
+  </extension>
+  
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    <propertySection tab="FamilyArchitectureDesign.main.tab"
+     class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilySelectorNameSection"
+     filter="fxman.spray.architecture.property.FamilySelectorFilter"
+     id="FamilyArchitectureDesign.main.tab.FamilySelector.name">
+    </propertySection>
+      </propertySections>
+  </extension>
+  
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    <propertySection tab="FamilyArchitectureDesign.main.tab"
+     class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilyGuardNameSection"
+     filter="fxman.spray.architecture.property.FamilyGuardFilter"
+     id="FamilyArchitectureDesign.main.tab.FamilyGuard.name">
+    </propertySection>
+      </propertySections>
+  </extension>
+  
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    <propertySection tab="FamilyArchitectureDesign.main.tab"
+     class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilyLoopNameSection"
+     filter="fxman.spray.architecture.property.FamilyLoopFilter"
+     id="FamilyArchitectureDesign.main.tab.FamilyLoop.name">
+    </propertySection>
+    <propertySection tab="FamilyArchitectureDesign.main.tab"
+     class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilyLoopLoopTypeSection"
+     filter="fxman.spray.architecture.property.FamilyLoopFilter"
+     afterSection="FamilyArchitectureDesign.main.tab.FamilyLoop.name"
+     id="FamilyArchitectureDesign.main.tab.FamilyLoop.loopType">
+    </propertySection>
+      </propertySections>
+  </extension>
+  
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    <propertySection tab="FamilyArchitectureDesign.main.tab"
+     class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilyAggregatorNameSection"
+     filter="fxman.spray.architecture.property.FamilyAggregatorFilter"
+     id="FamilyArchitectureDesign.main.tab.FamilyAggregator.name">
+    </propertySection>
+      </propertySections>
+  </extension>
+  
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+      </propertySections>
+  </extension>
+  
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    <propertySection tab="FamilyArchitectureDesign.main.tab"
+     class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilyConnectionConditionSection"
+     filter="fxman.spray.architecture.property.FamilyConnectionFilter"
+     id="FamilyArchitectureDesign.main.tab.FamilyConnection.condition">
+    </propertySection>
+      </propertySections>
+  </extension>
+  
+  <extension
+      point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+      </propertySections>
+  </extension>
+  
+  <!-- PROPERTY SECTIONS AUTOGEN END -->
+  
+  <!-- NEW DIAGRAM WIZARD AUTOGEN START -->
+  <extension
+        point="org.eclipse.ui.newWizards">
+        <category
+           name="FamilyArchitectureDesign"
+           id="org.eclipselabs.spray.FamilyArchitectureDesign">
+           </category>
+     <wizard
+           category="org.eclipselabs.spray.FamilyArchitectureDesign"
+           class="fxman.spray.architecture.internal.ExecutableExtensionFactory:org.eclipselabs.spray.runtime.graphiti.wizard.NewDiagramWizard"
+           descriptionImage="icons/FamilyArchitectureDesign-32.png"
+           icon="icons/FamilyArchitectureDesign-16.png"
+           id="org.eclipselabs.spray.FamilyArchitectureDesign.NewDiagramWizard"
+           name="New FamilyArchitectureDesign Diagram"
+           preferredPerspectives="org.eclipse.graphiti.examples.common.perspective.GFPerspective"
+           project="false">
+     </wizard>
+  </extension>
+  <!-- NEW DIAGRAM WIZARD AUTOGEN END -->
+  
+</plugin>

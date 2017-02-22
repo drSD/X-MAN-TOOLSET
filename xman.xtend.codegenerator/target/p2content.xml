@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='xman.xtend.codegenerator' version='2.1.0.201511251205'>
+    <update id='xman.xtend.codegenerator' range='[0.0.0,2.1.0.201511251205)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='Xtend Code Generator'/>
+      <property name='org.eclipse.equinox.p2.provider' value='The University of Manchester'/>
+      <property name='maven-groupId' value='uk.xman.tool'/>
+      <property name='maven-artifactId' value='xman.xtend.codegenerator'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+    </properties>
+    <provides size='7'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='xman.xtend.codegenerator' version='2.1.0.201511251205'/>
+      <provided namespace='osgi.bundle' name='xman.xtend.codegenerator' version='2.1.0.201511251205'/>
+      <provided namespace='java.package' name='xman.xtend.codegenerator.core' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.xtend.codegenerator.core.c' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.xtend.codegenerator.core.java' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.xtend.codegenerator.test' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='14'>
+      <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='2.3.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf' range='2.6.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='2.9.1'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='2.9.1'/>
+      <required namespace='osgi.bundle' name='org.junit' range='3.8.2'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='2.9.1'/>
+      <required namespace='osgi.bundle' name='org.eclipse.xtend2.lib' range='2.4.3'/>
+      <required namespace='osgi.bundle' name='org.eclipse.xtext.generator' range='2.4.3'/>
+      <required namespace='osgi.bundle' name='com.google.inject' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jface' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.xtext.util' range='2.4.3'/>
+      <required namespace='osgi.bundle' name='xman.xtend.conditiondsl' range='1.0.0'/>
+      <required namespace='osgi.bundle' name='xman.xcore.metamodel' range='0.1.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.xtext' range='2.4.3'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='xman.xtend.codegenerator' version='2.1.0.201511251205'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: xman.xtend.codegenerator;singleton:=true&#xA;Bundle-Version: 2.1.0.201511251205&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

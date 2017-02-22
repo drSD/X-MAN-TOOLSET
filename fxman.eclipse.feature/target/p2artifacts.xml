@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='org.eclipse.update.feature' id='fxman.eclipse.feature' version='2.1.0.201511251205'>
+    <properties size='6'>
+      <property name='artifact.size' value='5092'/>
+      <property name='download.size' value='5092'/>
+      <property name='maven-groupId' value='uk.fxman.tool'/>
+      <property name='maven-artifactId' value='fxman.eclipse.feature'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+      <property name='download.contentType' value='application/zip'/>
+    </properties>
+  </artifact>
+</artifacts>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='201511251205.x-man_category' version='1.0.0.783-cSJgvE7E7AQAAEQAE7Q'>
+    <properties size='2'>
+      <property name='org.eclipse.equinox.p2.name' value='X-MAN II  Tool'/>
+      <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+    </properties>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='201511251205.x-man_category' version='1.0.0.783-cSJgvE7E7AQAAEQAE7Q'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='fxman.eclipse.feature.feature.group' range='[2.1.0.201511251205,2.1.0.201511251205]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='xman.eclipse.feature.feature.group' range='[2.1.0.201511251205,2.1.0.201511251205]'/>
+    </requires>
+    <touchpoint id='null' version='0.0.0'/>
+  </unit>
+</units>

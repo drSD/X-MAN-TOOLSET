@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fxman.eclipse.feature_2.1.0.qualifier.jar" id="fxman.eclipse.feature" version="2.1.0.qualifier">
+      <category name="x-man_category"/>
+   </feature>
+   <feature url="features/xman.eclipse.feature_2.1.0.qualifier.jar" id="xman.eclipse.feature" version="2.1.0.qualifier">
+      <category name="x-man_category"/>
+   </feature>
+   <category-def name="x-man_category" label="X-MAN II  Tool"/>
+
+ 
+</site>

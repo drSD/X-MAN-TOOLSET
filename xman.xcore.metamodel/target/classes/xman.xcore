@@ -1,0 +1,184 @@
+package uk.xman.xcore
+
+enum ChannelPolicy{
+	DESTRUCTIVE_READ = 0
+	NONE_DESTRUCTIVE_READ = 1
+}
+
+enum Language{
+	Java = 0
+	CPlusPlus = 1
+}
+
+enum DataType{
+	Integer = 0
+	Float = 1
+	String = 2
+	Boolean = 3
+	List = 4
+	Set = 5 
+	Map = 6
+	IntegerList = 7
+	IntegerSet = 8
+	FloatList = 9
+	FloatSet = 10
+	StringList = 11
+	StringSet = 12
+	BooleanList = 13
+	BooleanSet = 14
+}
+ 
+enum LoopType{
+	DoWhile = 0
+	WhileDo = 1
+}  
+
+interface Composable{
+	String name = ""
+}
+
+interface Connector extends Composable{
+	String showedName
+}
+
+abstract class CompositionConnector extends Connector{
+	refers Connection[2..*] connections
+}
+
+class Aggregator extends CompositionConnector {
+}
+
+class Sequencer extends CompositionConnector{
+}
+
+class Selector extends CompositionConnector{
+	contains Input[1..*] input
+}
+
+abstract class AdapterConnector extends Connector{
+	contains Input[1..*] input
+	refers Connection[1..1] connection
+}
+
+class Loop extends AdapterConnector{
+	LoopType loopType
+}
+
+class Guard extends AdapterConnector{
+}
+
+interface Connection{
+}
+
+class CoordinationConnection extends Connection{
+	String condition = ""
+	refers Connector source
+	refers Composable  target
+}
+
+abstract class Component extends Provider {
+	String name = "ComponentName"
+	String author = "Unspecified"
+	String comment = ""
+	Boolean verified = "false"
+	Boolean valid = "false"
+}
+
+class AtomicComponent extends Component{
+	contains ComputationUnit[1..1] computationUnit opposite atomicComponent
+}
+
+//@Ecore(constraints="MustContainAtLeastOneMethod")
+class ComputationUnit{
+	Language implementationLanguage
+	String packageName = ""
+	String interfaceCode = ""
+	String sourceCode = ""
+	contains Method[1..*] methods
+	container AtomicComponent[1] atomicComponent opposite computationUnit
+}
+
+class Method {
+	String name = "MethodName"
+	String comment
+	contains Parameter[1..*] parameters
+}
+
+class CompositeComponent extends Component, Composite {
+	boolean isSystem = "false"
+	op void addAll(Composable[] data) {
+		composables.addAll(data)
+	}
+}
+
+interface Data{
+	String name = "paramName"
+	DataType dataType
+	refers  DataChannel[0..*] dataChannels
+}
+
+//@Ecore(constraints = "OrderMustBeSpecified")
+abstract class Parameter extends Data{
+	int order = "-1"
+	container Service service opposite parameters
+}
+
+
+class Input extends Parameter{
+}
+
+abstract class Resource{}
+
+class Output extends Parameter{
+}
+
+//@Ecore(constraints = "ValueCannotBeNull NameConnotBeNull DefaultValueConnotBeNull")
+class DataElement extends Data{
+	String range = ""
+	String value = ""
+	Object oValue 
+	container Provider component opposite dataElements
+}
+
+class DataChannel {
+	ChannelPolicy policy
+	refers Data  source
+	refers Data target
+}
+
+class ServiceReference {
+	String  name = "Notset"
+	refers Service service
+}
+
+class Service {  
+	String name = "ServiceName"
+	String comment = ""
+	contains Parameter[0..*] parameters opposite service
+	contains Contract[0..*] contracts
+	contains ServiceReference[0..*] serviceReferences
+}
+
+class Contract {
+	String name = "ContractName"
+	String preCondition = ""
+	String postCondition = ""
+}
+
+class ComponentInstance extends Composable{
+	String componentType = "ComponentType" // must not be removed!!!
+	contains Service[1..*]  selectedServices
+	contains DataElement[0..*] dataElements
+	contains Component[1..1] componentReference
+}
+
+abstract class Provider {
+	contains Service[1..*] services
+	contains DataElement[0..*] dataElements opposite component
+}
+
+abstract class Composite {
+	contains Composable[1..*] composables
+	contains Connection[1..*] connections
+	contains DataChannel[0..*] dataChannels
+}

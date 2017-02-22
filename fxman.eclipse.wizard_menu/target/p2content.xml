@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='fxman.eclipse.wizard_menu' version='2.1.0.201511251205'>
+    <update id='fxman.eclipse.wizard_menu' range='[0.0.0,2.1.0.201511251205)' severity='0'/>
+    <properties size='4'>
+      <property name='org.eclipse.equinox.p2.name' value='FX-MAN Wizard and Menu'/>
+      <property name='maven-groupId' value='uk.fxman.tool'/>
+      <property name='maven-artifactId' value='fxman.eclipse.wizard_menu'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+    </properties>
+    <provides size='4'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='fxman.eclipse.wizard_menu' version='2.1.0.201511251205'/>
+      <provided namespace='osgi.bundle' name='fxman.eclipse.wizard_menu' version='2.1.0.201511251205'/>
+      <provided namespace='java.package' name='fxman.eclipse.wizard' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='19'>
+      <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.navigator' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.navigator.resources' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.intro' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.intro.universal' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.swt' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jface' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.workbench' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.apache.log4j' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jdt.launching' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='xman.commons' range='1.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='fxman.eclipse.wizard_menu' version='2.1.0.201511251205'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: fxman.eclipse.wizard_menu;singleton:=true&#xA;Bundle-Version: 2.1.0.201511251205&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

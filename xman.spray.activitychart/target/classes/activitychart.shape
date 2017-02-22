@@ -1,0 +1,164 @@
+/*************************************************************************************
+ *
+ * Spray shapes definition
+ * 
+ * This file contains the definition of graphical figures using the Shapes Language.
+ * Refer to http://code.google.com/a/eclipselabs.org/p/spray/ for documentation.
+ *************************************************************************************/
+
+// Add definition of shapes here.
+
+  shape ActivityShape {
+ 	
+     rectangle style StyleWithGradientActivity {
+     	
+         position(x=0,y=0)
+         size(width=180,height=100)
+         style(line-width=2)
+         wrapped-text style FontActivity2{
+	      	align(horizontal=center, vertical= middle)
+	      	size(width=150, height =40)
+	      	position(x=10,y=10)
+	      	id=activityName
+      }
+      rectangle {
+      	compartment (
+				layout = fixed
+				id = subActivities
+				margin=8
+				invisible
+			)
+			position(x = 5, y= 25)
+			size(width=170,height=70)
+			
+      }
+//      line {
+// 		point (x=0, y=35)
+// 		point (x=180, y=35)
+// 	}
+      
+      
+     }
+ }
+ shape ControlActivityShape{
+ 	proportional=true
+ 	stretching (horizontal=true, vertical=true)
+     rounded-rectangle style StyleWithGradientControlActivity  {
+        size(width=200, height=100)
+ 		position(x=0,y=0)
+ 		curve(width=30, height=30)
+ 		wrapped-text style FontControlActivity2{
+	      	align(horizontal=center, vertical= top)
+	      	size(width=160, height =20)
+	      	position(x=15,y=5)
+	      	id=controlName
+      }
+     }
+     line {
+ 		point (x=0, y=35)
+ 		point (x=200, y=35)
+ 		style(line-width=2 line-color=RGB(100,100,255))
+ 	}
+ }
+  shape ExternalShape {
+     rectangle style StyleWithGradientExternal{
+     	 style(line-style=dot line-width=2)
+         position(x=0,y=0)
+         size(width=180,height=100)
+         wrapped-text style FontExternal2{
+	      	align(horizontal=center, vertical= middle)
+	      	size(width=150, height =20)
+	      	position(x=10,y=10)
+	      	style(font-size=10 font-bold=yes)
+	      	id=externalName
+      }
+      line {
+ 		point (x=0, y=35)
+ 		point (x=180, y=35)
+ 		style(line-style=dot)
+ 	}
+         
+     }
+ }
+ shape DataStoreShape {
+ 	rectangle style StyleWithGradientDataStore{
+     	 style(line-style=dot line-width=2)
+         position(x=0,y=0)
+         size(width=180,height=100)
+ 	line {
+ 		point (x=0, y=98)
+ 		point (x=180, y=98)
+ 		style(line-width=2)
+ 	}
+ 	line {
+ 		
+ 		point (x=0, y=0)
+ 		point (x=180, y=0)
+ 		style(line-width=2)
+ 		
+ 		}
+ 	
+ 		wrapped-text style FontDataStore2{
+	      	align(horizontal=center, vertical= middle)
+	      	size(width=150, height =20)
+	      	position(x=10,y=10)
+	      	style(font-size=10 font-bold=yes)
+	      	id=dataStoreName
+      }
+      line {
+ 		point (x=0, y=35)
+ 		point (x=180, y=35)
+ 	}
+      }
+ 	
+ }
+ shape connector {
+ 	ellipse {
+ 		size(width=20, height=20)
+ 		position(x=0,y=0)
+ 		style(background-color=black line-color=black) 
+ 		
+ 	}
+ }
+ connection ArrowConnection {
+ 	style (line-width=2 font-name="Calibri")
+     placing {
+         position (offset=1.0)
+         polygon {
+             point (x=-10, y=-5)
+             point (x=0, y=0)
+             point (x=-10, y=5)
+             style (background-color=black)
+         }
+     }
+     placing {
+		position (offset=0.5, radius=1, angle=0)
+		text {
+			align (horizontal=left, vertical=middle)
+			size (width=50, height=20)
+			id = connectionLabel
+			
+		}
+	}
+ }
+  connection DashedArrowConnection {
+  	style (line-style=dash line-width=2 font-name="Calibri")
+     placing {
+     	
+         position (offset=1.0)
+         polygon {
+             point (x=-10, y=-5)
+             point (x=0, y=0)
+             point (x=-10, y=5)
+             style (background-color=black)
+         }
+     }
+     placing {
+		position (offset=0.5, radius=1, angle=0)
+		text {
+			align (horizontal=left, vertical=middle)
+			size (width=50, height=20)
+			id = connectionLabel
+		}
+	}
+ }

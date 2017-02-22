@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.xcore.activitychart;singleton:=true
+Export-Package: xman.xcore.activitychart,xman.xcore.activitychart.impl
+ ,xman.xcore.activitychart.util
+Bundle-Name: X-MAN Activity Chart
+Bundle-Version: 2.1.0.201511251205
+Bundle-ClassPath: .
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.core.runtime,org.eclipselabs.spray.runtime
+ .graphiti;bundle-version="0.5.1",org.eclipse.emf.ecore;visibility:=re
+ export,org.eclipse.xtext.xbase.lib,org.eclipse.emf.ecore.xcore.lib
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+

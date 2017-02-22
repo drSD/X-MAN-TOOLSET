@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='xman.xcore.repository' version='2.1.0.201511251205'>
+    <update id='xman.xcore.repository' range='[0.0.0,2.1.0.201511251205)' severity='0'/>
+    <properties size='6'>
+      <property name='org.eclipse.equinox.p2.name' value='X-MAN Repository'/>
+      <property name='org.eclipse.equinox.p2.provider' value='The University of Manchester'/>
+      <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      <property name='maven-groupId' value='uk.xman.tool'/>
+      <property name='maven-artifactId' value='xman.xcore.repository'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+    </properties>
+    <provides size='6'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='xman.xcore.repository' version='2.1.0.201511251205'/>
+      <provided namespace='osgi.bundle' name='xman.xcore.repository' version='2.1.0.201511251205'/>
+      <provided namespace='java.package' name='uk.xman.repository' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.xman.repository.impl' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.xman.repository.util' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='5'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xcore.lib' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='xman.xcore.metamodel' range='2.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='xman.xcore.repository' version='2.1.0.201511251205'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: xman.xcore.repository;singleton:=true&#xA;Bundle-Version: 2.1.0.201511251205&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

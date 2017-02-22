@@ -1,0 +1,152 @@
+/*************************************************************************************
+ *
+ * Spray shapes definition
+ * 
+ * This file contains the definition of graphical figures using the Shapes Language.
+ * Refer to http://code.google.com/a/eclipselabs.org/p/spray/ for documentation.
+ *************************************************************************************/
+
+shape DataItemShape {
+	stretching (horizontal=false, vertical=false)
+	ellipse {
+		style (line-width=2)
+		size (width=62, height=62)
+		position (x=0, y=0) 
+		ellipse {
+			style (line-color=white)
+			position (x=8, y=5)
+			size (width=50, height=50) 
+		}
+		text style H2{
+			position (x=15, y=6)
+			size (width=10, height=5)
+			align (horizontal=center, vertical=middle)
+			id = dataItemLabel
+		}
+	}
+}
+
+shape ComputationUnitShape {
+	stretching (horizontal=false, vertical=false)
+	ellipse {
+		style (line-width=2)
+		size (width=120, height=120)
+		ellipse style BlackBackground {
+			position (x=10, y=10)
+			size (width=100, height=100)
+			text style H2 {
+				style (background-color=black font-color=white)
+				position (x=25, y=25)
+				size (width=25, height=30)
+				id = cuLable
+			}
+		}
+	}
+} 
+
+shape ServiceShape {
+	rounded-rectangle {
+		position (x=0, y=0)
+		size (width=120, height=130)
+		curve (width=20, height=20)
+		text {
+			style (font-size=10 font-color=black font-bold=yes)
+			position (x=15, y=5)
+			size (width=90, height=10)
+			align (horizontal=center, vertical=middle)
+			id = serviceNameLabel
+		}
+		rectangle {
+			compartment (
+				layout = vertical
+				invisible
+				id = serviceParameterAndReference
+				margin=8
+			)
+			position (x=0, y=30)
+			size (width=100, height=90)
+		}
+	}
+}
+
+shape InputShape {
+	stretching (horizontal=false, vertical=false) size-min (width=70, height=10) size-max (width=150, height=10)
+	ellipse {
+		style (background-color=dark-green line-color=black)
+		size (width=15, height=15)
+	}
+	line {
+		point (x=7, y=5)
+		point (x=7, y=12)
+		style (line-width=2)
+	}
+	ellipse {
+		size (width=2, height=2)
+		position (x=7, y=3)
+	}
+	text {
+		style (font-color=dark-green font-size=10)
+		align (horizontal=left, vertical=middle)
+		size (width=100, height=10)
+		position (x=21, y=-5)
+		id = inputParameterLabel
+	}
+}
+
+shape OutputShape {
+	stretching (horizontal=false, vertical=false) size-min (width=70, height=10) size-max (width=150, height=10)
+	ellipse {
+		style (background-color=blue line-color=black)
+		size (width=15, height=15)
+	}
+	ellipse {
+		size (width=7, height=8)
+		position (x=4, y=4)
+		style (line-width=1 line-color=white background-color=blue)
+	}
+	text {
+		style (font-color=blue font-size=10)
+		align (horizontal=left, vertical=middle)
+		size (width=70, height=10)
+		position (x=21, y=-5)
+		id = outputParameterLabel
+	}
+}
+
+shape MethodShape {
+	stretching (horizontal=false, vertical=false)
+	ellipse {
+		style (line-width=2)
+		size (width=42, height=42)
+		polygon style BlackBackground {
+			point (x=16, y=11)
+			point (x=16, y=31)
+			point (x=26, y=21)
+		}
+	}
+}
+
+connection AssociationConnection {
+	connection-type freeform
+	placing {
+		position (offset=0.5, radius=10, angle=270)
+		text {
+			size (width=60, height=20)
+			id = assocText
+		}
+	}
+}
+
+connection CompositionConnection {
+	connection-type freeform
+	placing {
+		position (offset=1.0, radius=0, angle=0)
+		polygon style BlackBackground {
+			point (x=0, y=0)
+			point (x=-15, y=-10)
+			point (x=-30, y=0)
+			point (x=-15, y=10)
+		}
+	}
+}
+

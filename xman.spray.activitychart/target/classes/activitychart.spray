@@ -1,0 +1,118 @@
+/*************************************************************************************
+ *
+ * Spray diagram definition
+ * 
+ * This file contains the definition of a graphical editor using the Spray Language.
+ * Refer to http://code.google.com/a/eclipselabs.org/p/spray/ for documentation.
+ *
+ * See also activitychart.properties to configure generator properties.
+ *************************************************************************************/
+// Add import statements here
+import activitychart.*
+
+diagram ActivityChartDiagram for ActivityChart style ActivitychartDefaultStyle
+
+
+// Add class mappings here. Refer to EClasses here. Don't forget to configure a
+// dependency to the plugin defining the EMF metamodel in META-INF/MANIFEST.MF.
+// It is required to have a genmodel for the metamodel.
+//
+// Example class mapping:
+class DataStoreActivity  icon "datastoreicon.png"{
+	shape DataStoreShape {
+		
+		name into dataStoreName
+	}
+	behavior {
+       // Enable create feature for this class and add it to the palette "Shapes"
+       create into activities  "Data-store" palette "Activity";
+     }
+}
+//class ActivityContainer icon "activityicon.png" {
+//     shape ActivityContainerShape {
+//     	name into activityContainerName
+//     	reference activities into subActivities
+//     
+//     }
+//     behavior {
+//       // Enable create feature for this class and add it to the palette "Shapes"
+//       create into activities palette "Activity";
+//     }
+//   }
+   class Activity icon "activityicon.png" {
+     shape ActivityShape {
+     	name into activityName
+     	reference activities into subActivities
+     }
+     behavior {
+       // Enable create feature for this class and add it to the palette "Shapes"
+       create into activities palette "Activity";
+     }
+   }
+   class ControlActivity icon "controlicon.png" {
+     shape ControlActivityShape {
+     	name into controlName
+     }
+     behavior {
+       // Enable create feature for this class and add it to the palette "Shapes"
+       create into activities "Control Activity" palette "Activity";
+     }
+   }
+   
+   class External icon "externalicon.png" {
+     shape ExternalShape {
+     	name into externalName
+     }
+     behavior {
+       // Enable create feature for this class and add it to the palette "Shapes"
+       create into activities palette "Activity";
+     }
+   }
+    class DataFlowLine icon "connection16.gif" {
+     connection ArrowConnection {
+     	expression into connectionLabel
+     }
+     {
+       from source
+       to target
+     }
+     behavior {
+       create into flowlines "Data-flow" palette "flow Line";
+     }
+   }
+   class ControlFlowLine icon "connection16.gif" {
+     connection DashedArrowConnection {
+     	expression into connectionLabel
+     }
+     {
+       from source
+       to target
+     }
+     behavior {
+       create into flowlines "Control-flow" palette "flow Line";
+     }
+   }
+   class JunctionConnector icon "connectoricon.png" {
+     shape connector
+     behavior {
+       // Enable create feature for this class and add it to the palette "Shapes"
+       //create into connectors palette "Connector";
+     }
+   }
+   class JointConnector icon "connectoricon.png" {
+     shape connector
+     behavior {
+       // Enable create feature for this class and add it to the palette "Shapes"
+       //create into connectors palette "Connector";
+     }
+   }
+//
+// Example association mapping:
+//   class Association icon "connection16.gif" {
+//     connection ArrowConnection {
+//       from source;
+//       to target;
+//     }
+//   }
+
+

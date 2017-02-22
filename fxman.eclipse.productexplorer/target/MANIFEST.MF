@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: fxman.product.explorer;singleton:=true
+Bundle-Name: Product Explorer
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.gr
+ aphiti,org.eclipse.emf.common,fxman.spray.architecture,fxman.xcore.me
+ tamodel,xman.commons;bundle-version="1.0.0"
+Bundle-ManifestVersion: 2
+Bundle-Activator: fxman.productexplorer.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+Import-Package: fxman.spray.architecture.compiler,uk.man.xman.project.
+ support
+

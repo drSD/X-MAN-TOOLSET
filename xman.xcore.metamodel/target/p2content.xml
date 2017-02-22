@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='xman.xcore.metamodel' version='2.1.0.201511251205'>
+    <update id='xman.xcore.metamodel' range='[0.0.0,2.1.0.201511251205)' severity='0'/>
+    <properties size='6'>
+      <property name='org.eclipse.equinox.p2.name' value='X-MAN MetaModel'/>
+      <property name='org.eclipse.equinox.p2.provider' value='The University of Manchester'/>
+      <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      <property name='maven-groupId' value='uk.xman.tool'/>
+      <property name='maven-artifactId' value='xman.xcore.metamodel'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+    </properties>
+    <provides size='20'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='xman.xcore.metamodel' version='2.1.0.201511251205'/>
+      <provided namespace='osgi.bundle' name='xman.xcore.metamodel' version='2.1.0.201511251205'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3' version='0.0.0'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3.builder' version='0.0.0'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3.concurrent' version='0.0.0'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3.event' version='0.0.0'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3.exception' version='0.0.0'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3.math' version='0.0.0'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3.mutable' version='0.0.0'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3.reflect' version='0.0.0'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3.text' version='0.0.0'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3.text.translate' version='0.0.0'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3.time' version='0.0.0'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3.tuple' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.xman.extension_points' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.xman.helpers' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.xman.xcore' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.xman.xcore.impl' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.xman.xcore.util' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='9'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.workbench' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.apache.log4j' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xcore.lib' range='0.0.0'/>
+      <required namespace='java.package' name='org.apache.commons.lang' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.ui.ide' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='xman.xcore.metamodel' version='2.1.0.201511251205'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: xman.xcore.metamodel;singleton:=true&#xA;Bundle-Version: 2.1.0.201511251205&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

@@ -1,0 +1,6 @@
+<diagramType
+  description="This is the diagram type for the AtomicDesign diagram type"
+  id="xman.spray.atomic.diagram.AtomicDesignDiagramType"
+  name="AtomicDesign Graphiti Diagram Type"
+  type="AtomicDesign">
+</diagramType>

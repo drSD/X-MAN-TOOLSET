@@ -1,0 +1,158 @@
+/*************************************************************************************
+ *
+ * Spray styles definition
+ * 
+ * This file contains the definition of style classes using the Styles Language.
+ * Refer to http://code.google.com/a/eclipselabs.org/p/spray/ for documentation.
+ *************************************************************************************/
+style H1 extends FontBold {
+	background-color = black
+	font-color = white
+	font-size = 55
+} 
+ 
+style H2 extends FontBold {
+	font-size = 25
+}
+
+style H3 extends FontBold {
+	font-size = 10
+}
+
+style H5 extends FontBold {
+	font-size = 8
+}
+
+
+style BlackBackground {
+	background-color = black
+}
+
+style FontBold {
+	font-bold = yes
+}
+
+style Service {
+	line-color = RGB (81, 162, 162)
+	line-width = 1
+	background-color = RGB (132, 193, 193)
+	transparency = 0.05
+}
+
+style Guard {
+	line-color = RGB (165, 223, 245)
+	line-width = 2
+	background-color = GuardBackgroundColor
+	gradient-orientation = vertical
+}
+
+style GuardNoBgd {
+	line-color = RGB (165, 223, 245)
+	line-width = 2
+}
+
+gradient GuardBackgroundColor {
+	area (color = white, offset = 0.0)
+	area (color = RGB (210, 239, 250), offset = 1.0)
+}
+
+style GuardTextStyle {
+	background-color = transparent
+}
+
+style Aggregator {
+	line-color = black
+	line-width = 2
+	background-color = white
+}
+
+style AggregatorTextStyle {
+	background-color = transparent
+}
+
+style Loop {
+	line-color = RGB (129, 143, 152)
+	line-width = 2
+	background-color = LoopBackgroundColor
+	gradient-orientation = vertical
+}
+
+style LoopNoBgd {
+	line-color = black
+	line-width = 2
+	background-color = white
+}
+
+gradient LoopBackgroundColor {
+	area (color = white, offset = 0.0)
+	area (color = RGB (161, 172, 178), offset = 1.0)
+}
+
+style LoopTextStyle {
+	background-color = transparent
+}
+
+style Sequencer {
+	line-color = RGB (230, 230, 0)
+	line-width = 2
+	background-color = SequencerBackgroundColor
+	gradient-orientation = vertical
+}
+
+style SequencerNoBgd {
+	line-color = black
+	line-width = 2
+	background-color = white
+}
+
+gradient SequencerBackgroundColor {
+	area (color = white, offset = 0.0)
+	area (color = RGB (255, 255, 166), offset = 1.0)
+}
+
+style SequencerTextStyle {
+	background-color = transparent
+}
+
+style Selector {
+	line-color = RGB (255, 112, 34)
+	line-width = 2
+	background-color = SelectorBackgroundColor
+	gradient-orientation = vertical
+}
+
+style SelectorNoBgd {
+	line-color = RGB (255, 112, 34)
+	line-width = 2
+}
+
+gradient SelectorBackgroundColor {
+	area (color = white, offset = 0.0)
+	area (color = RGB (255, 162, 111), offset = 1.0)
+}
+
+style SelectorTextStyle {
+	background-color = transparent
+}
+
+style Parameter {
+	background-color = white
+	font-color = RGB (81, 162, 162)
+	font-bold = yes
+	font-size = 15
+}
+
+style DataChannel {
+	line-style = dash
+	line-color = blue
+}
+
+style CoordinationConnection {
+	line-color = red
+}
+
+style Component {
+	line-color = gray
+	line-style = solid
+	line-width = 2
+}

@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.xtend.conditiondsl.ui;singleton:=true
+Export-Package: uk.ac.man.xman.dsl.ui,uk.ac.man.xman.dsl.ui.contentass
+ ist,uk.ac.man.xman.dsl.ui.contentassist.antlr,uk.ac.man.xman.dsl.ui.c
+ ontentassist.antlr.internal;x-internal:=true,uk.ac.man.xman.dsl.ui.in
+ ternal;x-internal:=true,uk.ac.man.xman.dsl.ui.labeling,uk.ac.man.xman
+ .dsl.ui.outline,uk.ac.man.xman.dsl.ui.quickfix
+Bundle-Name: xman.xtext.conditiondsl.ui
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: xman.xtend.conditiondsl;visibility:=reexport,org.eclip
+ se.xtext.ui,org.eclipse.xtext.ui.shared,org.eclipse.xtext.builder,org
+ .eclipse.xtext.common.types.ui,org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.compare,org.eclipse.xtext.xbase.ui,org.eclipse.ui.editors
+ ,org.eclipse.ui,org.antlr.runtime
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: uk.ac.man.xman.dsl.ui.internal.ConditionDSLActivator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: The University of Manchester
+Import-Package: org.apache.log4j,org.eclipse.xtext.xbase.lib
+

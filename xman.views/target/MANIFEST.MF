@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.views;singleton:=true
+Export-Package: xman.views;uses:="org.osgi.framework,org.eclipse.jface
+ .resource,org.eclipse.ui.plugin"
+Bundle-Name: X-MAN Tool Additional Views
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime
+Bundle-ManifestVersion: 2
+Bundle-Activator: xman.views.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: University of Manchester
+

@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: fxman.eclipse.wizard_menu;singleton:=true
+Export-Package: fxman.eclipse.wizard; uses:="org.osgi.framework,  org.
+ eclipse.ui,  org.eclipse.jface.resource,  org.eclipse.ui.dialogs,  or
+ g.eclipse.jface.wizard,  org.eclipse.ui.plugin,  org.eclipse.jface.vi
+ ewers"
+Bundle-Name: FX-MAN Wizard and Menu
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
+ re.resources,org.eclipse.jface.text,org.eclipse.ui.editors,org.eclips
+ e.ui.navigator,org.eclipse.ui.navigator.resources,org.eclipse.ui.ide,
+ org.eclipse.ui.intro,org.eclipse.ui.intro.universal,org.eclipse.ui.co
+ nsole,org.eclipse.jdt.ui,org.eclipse.swt,org.eclipse.jface,org.eclips
+ e.ui.workbench,org.apache.log4j,org.eclipse.jdt.core,org.eclipse.jdt.
+ launching,xman.commons;bundle-version="1.0.0"
+Bundle-ManifestVersion: 2
+Bundle-Activator: fxman.eclipse.wizard.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+

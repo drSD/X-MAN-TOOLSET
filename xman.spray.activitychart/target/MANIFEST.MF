@@ -1,0 +1,53 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.spray.activitychart; singleton:=true
+Export-Package: xman.activitychart.dialog; uses:="org.eclipse.swt.even
+ ts,  org.eclipse.swt.graphics,  org.eclipse.swt.widgets,  org.eclipse
+ .jface.dialogs",xman.activitychart.utils; uses:="org.eclipse.emf.ecor
+ e,  uk.xman.xcore,  org.eclipse.graphiti.mm.pictograms,  xman.xcore.a
+ ctivitychart",xman.spray.activitychart; uses:="org.osgi.framework,  c
+ om.google.inject,  org.eclipse.ui.plugin,  org.eclipse.xtext.service"
+ ,xman.spray.activitychart.diagram; uses:="org.eclipse.graphiti.dt,  o
+ rg.eclipse.graphiti.features,  org.eclipse.graphiti.features.context,
+   org.eclipse.graphiti.mm.algorithms,  org.eclipselabs.spray.runtime.
+ graphiti.features,  org.eclipse.graphiti.palette,  org.eclipselabs.sp
+ ray.runtime.graphiti.tb,  org.eclipse.graphiti.mm.pictograms,  org.ec
+ lipse.graphiti.services,  org.eclipselabs.spray.runtime.graphiti,  or
+ g.eclipse.graphiti.ui.platform,  xman.xcore.activitychart",xman.spray
+ .activitychart.features; uses:="org.eclipse.graphiti.features,  org.e
+ clipse.graphiti.ui.features,  xman.spray.activitychart.diagram,  org.
+ eclipse.graphiti.features.context,  org.eclipse.graphiti.mm.algorithm
+ s,  org.eclipselabs.spray.runtime.graphiti.features,  org.eclipselabs
+ .spray.runtime.graphiti.shape,  org.eclipse.graphiti.mm.pictograms,  
+ org.eclipse.graphiti.features.impl,  org.eclipse.graphiti.services,  
+ xman.xcore.activitychart",xman.spray.activitychart.gradients;uses:="o
+ rg.eclipse.graphiti.mm.algorithms.styles,org.eclipse.graphiti.util,or
+ g.eclipselabs.spray.runtime.graphiti.styles",xman.spray.activitychart
+ .handler;uses:="org.eclipse.core.commands",xman.spray.activitychart.i
+ nternal;x-internal:=true,xman.spray.activitychart.property; uses:="or
+ g.eclipse.graphiti.mm.pictograms,  org.eclipse.swt.widgets,  org.ecli
+ pse.graphiti.ui.platform,  org.eclipse.ui.views.properties.tabbed,  x
+ man.xcore.activitychart",xman.spray.activitychart.shapes; uses:="org.
+ eclipse.graphiti.features,  org.eclipse.graphiti.mm.pictograms,  org.
+ eclipselabs.spray.runtime.graphiti.styles,  org.eclipselabs.spray.run
+ time.graphiti.shape",xman.spray.activitychart.styles;uses:="org.eclip
+ se.graphiti.mm.algorithms.styles,org.eclipse.graphiti.mm.pictograms,o
+ rg.eclipselabs.spray.runtime.graphiti.styles"
+Bundle-Name: X-MAN Activity Chart
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.graphiti;bundle-version="0.10.0",org.eclip
+ se.graphiti.ui;bundle-version="0.10.0",org.eclipselabs.spray.runtime.
+ graphiti;bundle-version="0.5.1",org.eclipselabs.spray.shapes,org.ecli
+ pselabs.spray.styles,org.eclipse.ui.views.properties.tabbed;bundle-ve
+ rsion="3.5.200",org.eclipse.emf.transaction;bundle-version="1.4.0",xm
+ an.xcore.activitychart,xman.commons;bundle-version="1.0.0",xman.xcore
+ .metamodel
+Bundle-ManifestVersion: 2
+Bundle-Activator: xman.spray.activitychart.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: The University of Manchester
+Import-Package: org.eclipse.xtext.service,org.eclipse.xtext.ui.editor,
+ org.eclipse.xtext.ui.guice,org.eclipse.xtext.ui.resource,org.eclipse.
+ xtext.util,org.eclipselabs.spray.styles.generator.util,uk.xman.xcore,
+ xman.spray.atomic.diagram,xman.spray.composite.diagram
+

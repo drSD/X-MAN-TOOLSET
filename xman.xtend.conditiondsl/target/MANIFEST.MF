@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.xtend.conditiondsl;singleton:=true
+Export-Package: uk.ac.man.xman.dsl,uk.ac.man.xman.dsl.conditionDSL,uk.
+ ac.man.xman.dsl.conditionDSL.impl,uk.ac.man.xman.dsl.conditionDSL.uti
+ l,uk.ac.man.xman.dsl.formatting;uses:="org.eclipse.xtext.formatting.i
+ mpl",uk.ac.man.xman.dsl.generator;uses:="org.eclipse.emf.ecore.resour
+ ce,org.eclipse.xtext.generator",uk.ac.man.xman.dsl.jvmmodel;uses:="or
+ g.eclipse.emf.ecore,org.eclipse.xtext.xbase.jvmmodel",uk.ac.man.xman.
+ dsl.parser.antlr,uk.ac.man.xman.dsl.parser.antlr.internal;x-internal:
+ =true,uk.ac.man.xman.dsl.scoping;uses:="org.eclipse.xtext.scoping.imp
+ l",uk.ac.man.xman.dsl.serializer,uk.ac.man.xman.dsl.services,uk.ac.ma
+ n.xman.dsl.validation
+Bundle-Name: xman.xtext.conditiondsl
+Bundle-Version: 2.1.0.201511251205
+Bundle-ClassPath: .
+Require-Bundle: org.eclipse.xtext.xbase;bundle-version="2.4.3",org.ecl
+ ipse.xtext.generator;bundle-version="2.4.3",org.eclipse.emf.mwe2.laun
+ ch;resolution:=optional,org.eclipse.xtext;bundle-version="2.4.3",org.
+ eclipse.xtext.util;bundle-version="2.4.3",org.eclipse.emf.ecore, org.
+ eclipse.emf.common,org.antlr.runtime,org.eclipse.xtext.common.types;b
+ undle-version="2.4.3",org.eclipse.xtext.xbase.lib;bundle-version="2.4
+ .3"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: The University of Manchester
+Import-Package: org.apache.commons.logging;version="1.1.1",org.apache.
+ log4j;version="1.2.15",org.eclipse.xtext.xbase.lib
+

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: cdo.eclipse.ui
+Export-Package: cdo.eclipse.ui
+Bundle-Name: CDO Repository API
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
+ f.cdo,org.apache.log4j,xman.commons,org.eclipse.emf.cdo.net4j,org.ecl
+ ipse.net4j.tcp,org.eclipse.graphiti
+Bundle-ManifestVersion: 2
+Bundle-Activator: cdo.eclipse.ui.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+

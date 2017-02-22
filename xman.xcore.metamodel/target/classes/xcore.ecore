@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="xcore" nsURI="uk.xman.xcore" nsPrefix="xcore">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="basePackage" value="uk.xman"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EEnum" name="ChannelPolicy">
+    <eLiterals name="DESTRUCTIVE_READ"/>
+    <eLiterals name="NONE_DESTRUCTIVE_READ" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Language">
+    <eLiterals name="Java"/>
+    <eLiterals name="CPlusPlus" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DataType">
+    <eLiterals name="Integer"/>
+    <eLiterals name="Float" value="1"/>
+    <eLiterals name="String" value="2"/>
+    <eLiterals name="Boolean" value="3"/>
+    <eLiterals name="List" value="4"/>
+    <eLiterals name="Set" value="5"/>
+    <eLiterals name="Map" value="6"/>
+    <eLiterals name="IntegerList" value="7"/>
+    <eLiterals name="IntegerSet" value="8"/>
+    <eLiterals name="FloatList" value="9"/>
+    <eLiterals name="FloatSet" value="10"/>
+    <eLiterals name="StringList" value="11"/>
+    <eLiterals name="StringSet" value="12"/>
+    <eLiterals name="BooleanList" value="13"/>
+    <eLiterals name="BooleanSet" value="14"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="LoopType">
+    <eLiterals name="DoWhile"/>
+    <eLiterals name="WhileDo" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Composable" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Connector" abstract="true" interface="true"
+      eSuperTypes="#//Composable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="showedName" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CompositionConnector" abstract="true"
+      eSuperTypes="#//Connector">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connections" lowerBound="2"
+        upperBound="-1" eType="#//Connection"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Aggregator" eSuperTypes="#//CompositionConnector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Sequencer" eSuperTypes="#//CompositionConnector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Selector" eSuperTypes="#//CompositionConnector">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="input" lowerBound="1" upperBound="-1"
+        eType="#//Input" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AdapterConnector" abstract="true" eSuperTypes="#//Connector">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="input" lowerBound="1" upperBound="-1"
+        eType="#//Input" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connection" lowerBound="1"
+        eType="#//Connection"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Loop" eSuperTypes="#//AdapterConnector">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="loopType" unique="false"
+        eType="#//LoopType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Guard" eSuperTypes="#//AdapterConnector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Connection" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CoordinationConnection" eSuperTypes="#//Connection">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="condition" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//Connector"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="#//Composable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Component" abstract="true" eSuperTypes="#//Provider">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="ComponentName"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="author" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="Unspecified"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="verified" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valid" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
+        defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AtomicComponent" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="computationUnit" lowerBound="1"
+        eType="#//ComputationUnit" containment="true" resolveProxies="false" eOpposite="#//ComputationUnit/atomicComponent"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComputationUnit">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="implementationLanguage"
+        unique="false" eType="#//Language"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="packageName" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="interfaceCode" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceCode" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methods" lowerBound="1"
+        upperBound="-1" eType="#//Method" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="atomicComponent" lowerBound="1"
+        eType="#//AtomicComponent" eOpposite="#//AtomicComponent/computationUnit"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Method">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="MethodName"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" lowerBound="1"
+        upperBound="-1" eType="#//Parameter" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CompositeComponent" eSuperTypes="#//Component #//Composite">
+    <eOperations name="addAll" unique="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value=""/>
+      </eAnnotations>
+      <eParameters name="data" unique="false" upperBound="-1" eType="#//Composable"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isSystem" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Data" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="paramName"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType" unique="false"
+        eType="#//DataType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataChannels" upperBound="-1"
+        eType="#//DataChannel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter" abstract="true" eSuperTypes="#//Data">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="order" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="service" eType="#//Service"
+        eOpposite="#//Service/parameters"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Input" eSuperTypes="#//Parameter"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Resource" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Output" eSuperTypes="#//Parameter"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DataElement" eSuperTypes="#//Data">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="range" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="oValue" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="component" eType="#//Provider"
+        eOpposite="#//Provider/dataElements"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataChannel">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="policy" unique="false"
+        eType="#//ChannelPolicy"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//Data"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="#//Data"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceReference">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="Notset"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="service" eType="#//Service"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Service">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="ServiceName"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//Parameter" containment="true" resolveProxies="false" eOpposite="#//Parameter/service"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contracts" upperBound="-1"
+        eType="#//Contract" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceReferences" upperBound="-1"
+        eType="#//ServiceReference" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Contract">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="ContractName"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="preCondition" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="postCondition" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComponentInstance" eSuperTypes="#//Composable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="componentType" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="ComponentType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="selectedServices" lowerBound="1"
+        upperBound="-1" eType="#//Service" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataElements" upperBound="-1"
+        eType="#//DataElement" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="componentReference" lowerBound="1"
+        eType="#//Component" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Provider" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="services" lowerBound="1"
+        upperBound="-1" eType="#//Service" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataElements" upperBound="-1"
+        eType="#//DataElement" containment="true" resolveProxies="false" eOpposite="#//DataElement/component"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Composite" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="composables" lowerBound="1"
+        upperBound="-1" eType="#//Composable" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connections" lowerBound="1"
+        upperBound="-1" eType="#//Connection" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataChannels" upperBound="-1"
+        eType="#//DataChannel" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+</ecore:EPackage>

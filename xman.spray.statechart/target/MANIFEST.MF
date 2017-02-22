@@ -1,0 +1,49 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.spray.statechart; singleton:=true
+Export-Package: xman.spray.statechart; uses:="org.osgi.framework,  com
+ .google.inject,  org.eclipse.ui.plugin,  org.eclipse.xtext.service",x
+ man.spray.statechart.diagram; uses:="org.eclipse.graphiti.dt,  org.ec
+ lipse.graphiti.features,  org.eclipse.graphiti.features.context,  org
+ .eclipse.graphiti.mm.algorithms,  org.eclipselabs.spray.runtime.graph
+ iti.features,  org.eclipse.graphiti.palette,  org.eclipselabs.spray.r
+ untime.graphiti.tb,  uk.xcore.statechart,  org.eclipse.graphiti.mm.pi
+ ctograms,  org.eclipse.graphiti.services,  org.eclipselabs.spray.runt
+ ime.graphiti,  org.eclipse.graphiti.ui.platform",xman.spray.statechar
+ t.features; uses:="org.eclipse.graphiti.features,  xman.spray.statech
+ art.diagram,  org.eclipse.graphiti.ui.features,  org.eclipse.graphiti
+ .features.context,  org.eclipse.graphiti.mm.algorithms,  org.eclipsel
+ abs.spray.runtime.graphiti.features,  org.eclipselabs.spray.runtime.g
+ raphiti.shape,  uk.xcore.statechart,  org.eclipse.graphiti.mm.pictogr
+ ams,  org.eclipse.graphiti.features.impl,  org.eclipse.graphiti.servi
+ ces",xman.spray.statechart.gradients;uses:="org.eclipse.graphiti.mm.a
+ lgorithms.styles,org.eclipse.graphiti.util,org.eclipselabs.spray.runt
+ ime.graphiti.styles",xman.spray.statechart.internal;x-internal:=true,
+ xman.spray.statechart.property; uses:="uk.xcore.statechart,  org.ecli
+ pse.graphiti.mm.pictograms,  org.eclipse.swt.widgets,  org.eclipse.gr
+ aphiti.ui.platform,  org.eclipse.ui.views.properties.tabbed",xman.spr
+ ay.statechart.shapes; uses:="org.eclipse.graphiti.features,  org.ecli
+ pse.graphiti.mm.pictograms,  org.eclipselabs.spray.runtime.graphiti.s
+ tyles,  org.eclipselabs.spray.runtime.graphiti.shape",xman.spray.stat
+ echart.styles;uses:="org.eclipse.graphiti.mm.algorithms.styles,org.ec
+ lipse.graphiti.mm.pictograms,org.eclipselabs.spray.runtime.graphiti.s
+ tyles",xman.statechart.handlers;uses:="org.eclipse.core.commands",xma
+ n.statechart.utils;uses:="uk.xcore.statechart,uk.xman.xcore"
+Bundle-Name: xman.spray.statechart
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.graphiti;bundle-version="0.10.0",org.eclip
+ se.graphiti.ui;bundle-version="0.10.0",org.eclipselabs.spray.runtime.
+ graphiti,org.eclipselabs.spray.shapes,org.eclipselabs.spray.styles,or
+ g.eclipse.ui.views.properties.tabbed;bundle-version="3.5.200",org.ecl
+ ipse.emf.transaction;bundle-version="1.4.0",xman.commons;bundle-versi
+ on="2.0.0",xman.xcore.metamodel,xman.xcore.statechart
+Bundle-ManifestVersion: 2
+Bundle-Activator: xman.spray.statechart.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: The University of Manchester
+Import-Package: org.eclipse.xtext.service,org.eclipse.xtext.ui.editor,
+ org.eclipse.xtext.ui.guice,org.eclipse.xtext.ui.resource,org.eclipse.
+ xtext.util,org.eclipse.xtext.xbase.lib,org.eclipselabs.spray.styles.g
+ enerator.util,uk.man.xman.project.support,uk.xman.xcore,xman.spray.at
+ omic.diagram,xman.spray.composite.diagram
+

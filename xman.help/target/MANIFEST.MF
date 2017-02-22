@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.help;singleton:=true
+Export-Package: xman.help;uses:="org.osgi.framework,org.eclipse.jface.
+ resource,org.eclipse.ui.plugin"
+Bundle-Name: X-MAN Documentation
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime
+Bundle-ManifestVersion: 2
+Bundle-Activator: xman.help.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+

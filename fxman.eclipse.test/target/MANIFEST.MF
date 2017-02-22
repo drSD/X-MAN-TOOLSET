@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: fxman.eclipse.test
+Bundle-Name: FX-MAN Test
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.junit,fxma
+ n.xcore.metamodel,fxman.xcore.repository,cdo.eclipse.ui,xman.cdo.repo
+ sitory;bundle-version="2.1.0",org.eclipse.emf.cdo.net4j,org.eclipse.n
+ et4j.tcp
+Bundle-ManifestVersion: 2
+Bundle-Activator: fxman.eclipse.test.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+Import-Package: fxman.repository.preferences,uk.fxman.repository
+

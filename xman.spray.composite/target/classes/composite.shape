@@ -1,0 +1,319 @@
+/*************************************************************************************
+ *
+ * Spray shapes definition
+ * 
+ * This file contains the definition of graphical figures using the Shapes Language.
+ * Refer to http://code.google.com/a/eclipselabs.org/p/spray/ for documentation.
+ *************************************************************************************/
+shape DataItem {
+	rectangle {
+		compartment (
+			invisible
+			layout = fixed
+			spacing=0
+			margin=0
+		) 
+		size (width=70, height=100)
+		ellipse {
+			style (line-width=2)
+			size (width=62, height=62)
+			position (x=0, y=0)
+			ellipse {
+				style (line-color=white)
+				position (x=8, y=5)
+				size (width=50, height=50)
+			} 
+			text style H2 { 
+				position (x=15, y=6)
+				size (width=10, height=5)
+				align (horizontal=center, vertical=middle)
+				id = constantLabel
+			}
+		}
+		text style H3 {
+			position (x=0, y=63)
+			size (width=8, height=5)
+			align (horizontal=center, vertical=middle)
+			id = label
+		}
+	}
+	anchor {
+		position (xoffset=0.0, yoffset=0.3)
+		position (xoffset=0.82, yoffset=0.3)
+	}
+}
+
+shape ServiceShape {
+	rounded-rectangle {
+		position (x=0, y=0)
+		size (width=120, height=130)
+		curve (width=20, height=20)
+		text {
+			style (font-size=10 font-color=black font-bold=yes)
+			position (x=10, y=5)
+			size (width=90, height=10)
+			align (horizontal=center, vertical=middle)
+			id = serviceNameLabel
+		}
+		rectangle {
+			compartment (
+				layout = vertical
+				invisible
+				id = serviceParameterAndReference
+				margin=8
+			)
+			position (x=0, y=20)
+			size (width=100, height=90)
+		}
+	}
+}
+
+shape ServiceReferenceShape {
+	stretching (horizontal=true, vertical=false) size-min (width=70, height=10) size-max (width=150, height=10)
+	ellipse {
+		style (background-color=yellow line-color=black)
+		size (width=15, height=15)
+	}
+	wrapped-text {
+		align (horizontal=left, vertical=middle)
+		style (font-color=black font-size=10)
+		size (width=150, height=25)
+		position (x=21, y=-2)
+		id = serviceOriginLabel
+	}
+}
+
+shape InputShape {
+	stretching (horizontal=true, vertical=false) size-min (width=70, height=10) size-max (width=150, height=10)
+	ellipse {
+		style (background-color=dark-green line-color=black)
+		size (width=15, height=15)
+	}
+	line {
+		point (x=7, y=5)
+		point (x=7, y=12)
+		style (line-width=2)
+	}
+	ellipse {
+		size (width=2, height=2)
+		position (x=7, y=3)
+	}
+	text {
+		style (font-color=dark-green font-size=10)
+		align (horizontal=left, vertical=middle)
+		size (width=120, height=10)
+		position (x=21, y=-5)
+		id = inputParameterLabel
+	}
+}
+
+shape OutputShape {
+	stretching (horizontal=true, vertical=false) size-min (width=70, height=10) size-max (width=150, height=10)
+	ellipse {
+		style (background-color=blue line-color=black)
+		size (width=15, height=15)
+	}
+	ellipse {
+		size (width=7, height=8)
+		position (x=4, y=4)
+		style (line-width=1 line-color=white background-color=blue)
+	}
+	text {
+		style (font-color=blue font-size=10)
+		align (horizontal=left, vertical=middle)
+		size (width=120, height=10)
+		position (x=21, y=-5)
+		id = outputParameterLabel
+	}
+}
+
+/* ADAPTERS */
+shape GuardShape {
+	polygon {
+		point (x=0, y=0)
+		point (x=100, y=0)
+		point (x=50, y=50)
+		style (line-color=black line-width=2 background-color=white)
+		text style GuardTextStyle {
+			style (font-color=black font-size=10 font-bold=yes)
+			align (horizontal=center, vertical=middle)
+			size (width=70, height=10)
+			position (x=10, y=0)
+			id = guardLabel
+		}
+		rectangle {
+			compartment (
+				id = inputParameter
+				layout = fixed
+				invisible
+			)
+			position (x=10, y=20)
+			size (width=80, height=30)
+		}
+	}
+}
+
+shape LoopShape {
+	ellipse style LoopNoBgd {
+		size (width=70, height=70)
+		polygon {
+			point (x=10, y=13) //middle
+			point (x=18, y=0) //top
+			point (x=25, y=10)
+		}
+		text style LoopTextStyle {
+			style (font-color=black font-size=10 font-bold=yes)
+			align (horizontal=center, vertical=middle)
+			size (width=60, height=10)
+			position (x=2, y=15)
+			id = loopLabel
+		}
+		rectangle {
+			compartment (
+				id = inputParameter
+				layout = fixed
+				invisible
+			)
+			position (x=0, y=30)
+			size (width=63, height=35)
+		}
+	}
+}
+
+/*Component Instance  */
+shape ComponentInstanceShape {
+	rectangle style Component {
+		compartment (
+			id = selectedServicesHook
+			layout = vertical
+			spacing=10
+		)
+		size (width=150, height=150)
+		style (background-color=light-gray line-color=gray)
+		text style Component {
+			style (font-size=12 background-color=gray font-color=white font-bold=yes transparency=0.0)
+			align (horizontal=center, vertical=middle)
+			size (width=120, height=10)
+			position (x=5, y=5)
+			id = componentInstanceNameLabel
+		}
+	}
+	anchor {
+		position (xoffset=0.5, yoffset=0.0)
+	}
+}
+
+/* COMPOSITION CONNECTORS */
+shape AggregatorShape {
+	polygon style Aggregator {
+		point (x=20, y=0)
+		point (x=90, y=0)
+		point (x=110, y=50)
+		point (x=0, y=50)
+		style (line-color=black)
+		text style AggregatorTextStyle {
+			style (font-color=black font-size=10 font-bold=yes)
+			position (x=15, y=10)
+			size (width=70, height=20)
+			align (horizontal=center, vertical=middle)
+			id = aggregatorLabel
+		}
+	}
+}
+
+shape SequencerShape {
+	rounded-rectangle style SequencerNoBgd {
+		size (width=100, height=50)
+		curve (width=20, height=20)
+		text style SequencerTextStyle {
+			style (font-color=black font-size=10 font-bold=yes)
+			align (horizontal=center, vertical=middle)
+			size (width=80, height=10)
+			position (x=1, y=12)
+			id = sequencerLabel
+		}
+	}
+}
+
+
+shape SelectorShape {
+	polygon {
+		point (x=0, y=38)
+		point (x=50, y=76)
+		point (x=100, y=38)
+		point (x=50, y=0)
+		style (line-color=black line-width=2 background-color=white)
+		text style SelectorTextStyle {
+			style (font-color=black font-size=10 font-bold=yes)
+			align (horizontal=center, vertical=middle)
+			size (width=45, height=10)
+			position (x=8, y=12)
+			id = selectorLabel
+		}
+		rectangle {
+			compartment (
+				id = inputParameter
+				layout = fixed
+				invisible
+			)
+			position (x=0, y=30)
+			size (width=100, height=38)
+		}
+	}
+}
+
+
+shape ParShape {
+	polygon style Aggregator {
+		point (x=20, y=0)
+		point (x=90, y=0)
+		point (x=110, y=50)
+		point (x=0, y=50)
+		style (line-color=black)
+		text style AggregatorTextStyle {
+			style (font-color=black font-size=10 font-bold=yes)
+			position (x=15, y=10)
+			size (width=70, height=20)
+			align (horizontal=center, vertical=middle)
+			id = parLabel
+		}
+	}
+}
+
+
+
+/*Connectors*/
+connection CoordinationConnection {
+	connection-type freeform
+	placing {
+		position (offset=1.0, radius=0, angle=0)
+		polygon {
+			point (x=-10, y=5)
+			point (x=0, y=0)
+			point (x=-10, y=-5)
+			style (background-color=black)
+		}
+	}
+	placing {
+		position (offset=0.5, radius=1, angle=0)
+		text style H3 {
+			align (horizontal=left, vertical=middle)
+			size (width=50, height=20)
+			id = connectionLabel
+		}
+	}
+}
+
+connection DataChannelConnection style DataChannel {
+	connection-type freeform
+	style (line-style=dash)
+	placing {
+		position (offset=1.0, radius=0, angle=0)
+		polygon {
+			point (x=-10, y=5)
+			point (x=0, y=0)
+			point (x=-10, y=-5)
+			style (background-color=black)
+		}
+	}
+}

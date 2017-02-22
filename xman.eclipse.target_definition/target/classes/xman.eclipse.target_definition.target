@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="xman.eclipse.target_definition" sequenceNumber="129">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.net4j.db.derby.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.examples.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.db.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.db.h2.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.util.ui.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.emf.cdo.sdk.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.db.mysql.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.db.oracle.feature.group" version="1.0.1.v20140218-1709"/>
+<unit id="org.eclipse.net4j.db.postgresql.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.db.hsqldb.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.ui.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.util.feature.group" version="4.2.1.v20140218-1709"/>
+<unit id="org.eclipse.net4j.sdk.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.tests.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.defs.feature.group" version="4.2.1.v20140218-1830"/>
+<unit id="org.eclipse.net4j.doc.feature.group" version="4.2.1.v20140218-1709"/>
+<repository location="http://download.eclipse.org/modeling/emf/cdo/updates/releases/4.2"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="de.cau.cs.kieler.kiml.graphiti.feature.feature.group" version="0.12.2.201502261452"/>
+<repository location="http://rtsys.informatik.uni-kiel.de/~kieler/updatesite/release_pragmatics_2015-02/"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.apache.commons.lang3" version="3.1.0.v201403281430"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20150519210750/repository/"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipselabs.spray.feature.sdk.feature.group" version="0.5.1.201511022336"/>
+<repository location="http://130.88.192.95/~cbsd/mirror-repository/spray-0.5.1/"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.emf.mwe2.language.sdk.feature.group" version="2.4.1.v201309030840"/>
+<unit id="org.eclipse.emf.ecore.xcore.sdk.feature.group" version="1.1.1.v20130903-0948"/>
+<unit id="org.eclipse.emf.transaction.sdk.feature.group" version="1.7.0.201306111400"/>
+<unit id="org.eclipse.emf.mwe2.runtime.sdk.feature.group" version="2.4.1.v201309030422"/>
+<unit id="org.eclipse.xtend.sdk.feature.group" version="2.4.3.v201309030823"/>
+<unit id="org.eclipse.sdk.feature.group" version="4.3.1.v20130911-1000"/>
+<unit id="org.eclipse.gef.sdk.feature.group" version="3.9.1.201308190730"/>
+<unit id="de.itemis.xtext.antlr.sdk.feature.group" version="2.1.0.v201308291703"/>
+<unit id="org.eclipse.pde.feature.group" version="3.9.1.v20130911-1000"/>
+<unit id="org.eclipse.emf.sdk.feature.group" version="2.9.1.v20130902-0605"/>
+<unit id="de.itemis.xtext.antlr.feature.feature.group" version="2.1.0.v201308291703"/>
+<unit id="org.eclipse.xtext.sdk.feature.group" version="2.4.3.v201309030823"/>
+<unit id="org.eclipse.graphiti.sdk.plus.feature.feature.group" version="0.10.1.v20130918-0838"/>
+<repository location="http://130.88.192.95/~cbsd/mirror-repository/spray/"/>
+</location>
+</locations>
+<includeBundles>
+<plugin id="de.cau.cs.kieler.core"/>
+<plugin id="de.cau.cs.kieler.core.kgraph"/>
+<plugin id="de.cau.cs.kieler.core.kgraph.source"/>
+<plugin id="de.cau.cs.kieler.core.source"/>
+<plugin id="de.cau.cs.kieler.kiml"/>
+<plugin id="de.cau.cs.kieler.kiml.graphiti"/>
+<plugin id="de.cau.cs.kieler.kiml.graphiti.source"/>
+<plugin id="de.cau.cs.kieler.kiml.service"/>
+<plugin id="de.cau.cs.kieler.kiml.service.source"/>
+<plugin id="de.cau.cs.kieler.kiml.source"/>
+<plugin id="de.cau.cs.kieler.kiml.ui"/>
+<plugin id="de.cau.cs.kieler.kiml.ui.source"/>
+<plugin id="de.cau.cs.kieler.klay.force"/>
+<plugin id="de.cau.cs.kieler.klay.force.source"/>
+<plugin id="de.cau.cs.kieler.klay.layered"/>
+<plugin id="de.cau.cs.kieler.klay.layered.source"/>
+<plugin id="de.cau.cs.kieler.klay.tree"/>
+<plugin id="de.cau.cs.kieler.klay.tree.source"/>
+</includeBundles>
+</target>

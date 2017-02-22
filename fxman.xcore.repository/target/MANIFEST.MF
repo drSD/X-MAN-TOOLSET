@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: fxman.xcore.repository;singleton:=true
+Export-Package: uk.fxman.repository,uk.fxman.repository.impl,uk.fxman.
+ repository.util
+Bundle-Name: FX-MAN Repository Model
+Bundle-Version: 2.1.0.201511251205
+Bundle-ClassPath: .
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibil
+ ity:=reexport,org.eclipse.xtext.xbase.lib,org.eclipse.emf.ecore.xcore
+ .lib,xman.xcore.metamodel;visibility:=reexport,fxman.xcore.metamodel;
+ bundle-version="2.1.0";visibility:=reexport
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University Of Manchester
+

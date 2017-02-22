@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: fxman.cdo.repository;singleton:=true
+Export-Package: fxman.repository.preferences,fxman.repository.viewer.d
+ nd
+Bundle-Name: FX-MAN CDO Repository
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,cdo.eclipse.ui
+ ,org.eclipse.graphiti,fxman.xcore.metamodel,xman.commons,org.eclipse.
+ emf.cdo.net4j,fxman.spray.architecture,org.apache.log4j,org.eclipsela
+ bs.spray.runtime.graphiti;bundle-version="0.5.1",fxman.xcore.reposito
+ ry
+Bundle-ManifestVersion: 2
+Bundle-Activator: fxman.repository.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+

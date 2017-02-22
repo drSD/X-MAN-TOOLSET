@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='xman.spray.activitychart' version='2.1.0.201511251205'>
+    <update id='xman.spray.activitychart' range='[0.0.0,2.1.0.201511251205)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='X-MAN Activity Chart'/>
+      <property name='org.eclipse.equinox.p2.provider' value='The University of Manchester'/>
+      <property name='maven-groupId' value='uk.xman.tool'/>
+      <property name='maven-artifactId' value='xman.spray.activitychart'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+    </properties>
+    <provides size='14'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='xman.spray.activitychart' version='2.1.0.201511251205'/>
+      <provided namespace='osgi.bundle' name='xman.spray.activitychart' version='2.1.0.201511251205'/>
+      <provided namespace='java.package' name='xman.activitychart.dialog' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.activitychart.utils' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.spray.activitychart' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.spray.activitychart.diagram' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.spray.activitychart.features' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.spray.activitychart.gradients' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.spray.activitychart.handler' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.spray.activitychart.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.spray.activitychart.property' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.spray.activitychart.shapes' version='0.0.0'/>
+      <provided namespace='java.package' name='xman.spray.activitychart.styles' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='19'>
+      <required namespace='osgi.bundle' name='org.eclipse.graphiti' range='0.10.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.graphiti.ui' range='0.10.0'/>
+      <required namespace='osgi.bundle' name='org.eclipselabs.spray.runtime.graphiti' range='0.5.1'/>
+      <required namespace='osgi.bundle' name='org.eclipselabs.spray.shapes' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipselabs.spray.styles' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.views.properties.tabbed' range='3.5.200'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.transaction' range='1.4.0'/>
+      <required namespace='osgi.bundle' name='xman.xcore.activitychart' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='xman.commons' range='1.0.0'/>
+      <required namespace='osgi.bundle' name='xman.xcore.metamodel' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.xtext.service' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.xtext.ui.editor' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.xtext.ui.guice' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.xtext.ui.resource' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.xtext.util' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipselabs.spray.styles.generator.util' range='0.0.0'/>
+      <required namespace='java.package' name='uk.xman.xcore' range='0.0.0'/>
+      <required namespace='java.package' name='xman.spray.atomic.diagram' range='0.0.0'/>
+      <required namespace='java.package' name='xman.spray.composite.diagram' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='xman.spray.activitychart' version='2.1.0.201511251205'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: xman.spray.activitychart; singleton:=true&#xA;Bundle-Version: 2.1.0.201511251205&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

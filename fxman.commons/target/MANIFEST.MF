@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: fxman.commons
+Export-Package: fxman.commons.marker
+Bundle-Name: FX-MAN Commons
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.apache.log
+ 4j,org.eclipse.graphiti,xman.commons,org.eclipse.core.resources,fxman
+ .xcore.metamodel
+Bundle-ManifestVersion: 2
+Bundle-Activator: fxman.commons.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+

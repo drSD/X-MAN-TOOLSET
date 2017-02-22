@@ -1,0 +1,38 @@
+grammar uk.ac.man.xman.dsl.ConditionDSL with org.eclipse.xtext.xbase.Xbase
+
+generate conditionDSL "http://www.cs.man.ac.uk/xman/dsl/ConditionDSL"
+
+Model:
+	expression=Expression;
+
+Expression:
+	CompositeExpression;
+
+CompositeExpression returns Expression:
+	AtomicExpression (({AND.left=current} op=ANDOperator | {OR.left=current} op=OROperator) right=AtomicExpression)*;
+
+AtomicExpression returns Expression:
+	{AtomicExpression} ('(' expr=Expression ')' |
+	 name=ID op=ComparisonOperator value=Value ) |
+	 Constant;
+	 
+enum ComparisonOperator:
+	EQ = '==' | NEQ = '!=' | LT = '<' | LTE = '<=' | GT = '>' | GTE = '>=';
+	
+Value:
+	INT | FLOAT | STRING | BOOLEAN_CONSTANT;
+	
+Constant:
+	value = '.';
+
+FLOAT:
+	INT '.' INT;
+	
+ANDOperator:
+	'&&';
+
+OROperator:
+	'||';
+	
+BOOLEAN_CONSTANT:
+	'True' | 'False';

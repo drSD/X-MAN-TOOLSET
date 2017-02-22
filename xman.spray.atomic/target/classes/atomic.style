@@ -1,0 +1,42 @@
+/*************************************************************************************
+ *
+ * Spray styles definition
+ * 
+ * This file contains the definition of style classes using the Styles Language.
+ * Refer to http://code.google.com/a/eclipselabs.org/p/spray/ for documentation.
+ *************************************************************************************/
+
+// Add definition of styles here.
+
+style H1 extends FontBold { 
+	background-color = black
+	font-color = white
+	font-size = 55
+}
+
+style H2 extends FontBold{
+	font-size = 25
+}
+
+style H3 extends FontBold{
+	font-size = 10
+}
+
+style RedBackground {
+	background-color = red
+}	
+
+style BlackBackground {
+	background-color = black
+}	
+
+style FontBold{
+	font-bold = yes
+}
+
+style Service {
+	line-color = RGB(81,162,162)
+	line-width = 1
+	background-color = blue
+	transparency=0.05
+}

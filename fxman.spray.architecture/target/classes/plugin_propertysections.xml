@@ -1,0 +1,113 @@
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+  <propertySection tab="FamilyArchitectureDesign.main.tab"
+   class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FXMANArchitectureInstanceNameSection"
+   filter="fxman.spray.architecture.property.FXMANArchitectureInstanceFilter"
+   id="FamilyArchitectureDesign.main.tab.FXMANArchitectureInstance.name">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+  <propertySection tab="FamilyArchitectureDesign.main.tab"
+   class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilySequencerNameSection"
+   filter="fxman.spray.architecture.property.FamilySequencerFilter"
+   id="FamilyArchitectureDesign.main.tab.FamilySequencer.name">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+  <propertySection tab="FamilyArchitectureDesign.main.tab"
+   class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilySelectorNameSection"
+   filter="fxman.spray.architecture.property.FamilySelectorFilter"
+   id="FamilyArchitectureDesign.main.tab.FamilySelector.name">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+  <propertySection tab="FamilyArchitectureDesign.main.tab"
+   class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilyGuardNameSection"
+   filter="fxman.spray.architecture.property.FamilyGuardFilter"
+   id="FamilyArchitectureDesign.main.tab.FamilyGuard.name">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+  <propertySection tab="FamilyArchitectureDesign.main.tab"
+   class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilyLoopNameSection"
+   filter="fxman.spray.architecture.property.FamilyLoopFilter"
+   id="FamilyArchitectureDesign.main.tab.FamilyLoop.name">
+  </propertySection>
+  <propertySection tab="FamilyArchitectureDesign.main.tab"
+   class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilyLoopLoopTypeSection"
+   filter="fxman.spray.architecture.property.FamilyLoopFilter"
+   afterSection="FamilyArchitectureDesign.main.tab.FamilyLoop.name"
+   id="FamilyArchitectureDesign.main.tab.FamilyLoop.loopType">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+  <propertySection tab="FamilyArchitectureDesign.main.tab"
+   class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilyAggregatorNameSection"
+   filter="fxman.spray.architecture.property.FamilyAggregatorFilter"
+   id="FamilyArchitectureDesign.main.tab.FamilyAggregator.name">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+  <propertySection tab="FamilyArchitectureDesign.main.tab"
+   class="fxman.spray.architecture.internal.ExecutableExtensionFactory:fxman.spray.architecture.property.FamilyConnectionConditionSection"
+   filter="fxman.spray.architecture.property.FamilyConnectionFilter"
+   id="FamilyArchitectureDesign.main.tab.FamilyConnection.condition">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="FamilyArchitectureDesign.PropertyContributor">
+    </propertySections>
+</extension>
+

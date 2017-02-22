@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/xman.xcore.metamodel/src" modelPluginID="xman.xcore.metamodel"
+    runtimeJar="true" modelName="Xman" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="" booleanFlagsField="eFlags" booleanFlagsReservedBits="8" importerID="org.eclipse.emf.ecore.xcore.importer"
+    containmentProxies="true" complianceLevel="7.0" language="en" usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"
+    operationReflection="true" importOrganizing="true" decoration="Live" oSGiCompatible="true">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/exporter/org.eclipse.xsd.ecore.exporter">
+    <genAnnotations source="selectedPackages">
+      <details key="http://www.eclipse.org/emf/2002/Ecore" value="Ecore.xsd"/>
+    </genAnnotations>
+    <details key="directoryURI" value="."/>
+  </genAnnotations>
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/exporter/org.eclipse.xsd.ecore.exporter.xmi">
+    <genAnnotations source="selectedPackages">
+      <details key="http://www.eclipse.org/emf/2002/Ecore" value="EcoreXMI.xsd"/>
+    </genAnnotations>
+    <details key="directoryURI" value="."/>
+  </genAnnotations>
+  <foreignModel>xman.xcore</foreignModel>
+  <modelPluginVariables>org.eclipse.xtext.xbase.lib</modelPluginVariables>
+  <modelPluginVariables>org.eclipse.emf.ecore.xcore.lib</modelPluginVariables>
+  <genPackages prefix="Xcore" basePackage="uk.xman" disposableProviderFactory="true"
+      ecorePackage="xcore.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xcore.ecore#//ChannelPolicy">
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//ChannelPolicy/DESTRUCTIVE_READ"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//ChannelPolicy/NONE_DESTRUCTIVE_READ"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xcore.ecore#//Language">
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//Language/Java"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//Language/CPlusPlus"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xcore.ecore#//DataType">
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/Integer"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/Float"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/String"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/Boolean"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/List"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/Set"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/Map"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/IntegerList"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/IntegerSet"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/FloatList"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/FloatSet"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/StringList"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/StringSet"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/BooleanList"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//DataType/BooleanSet"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xcore.ecore#//LoopType">
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//LoopType/DoWhile"/>
+      <genEnumLiterals ecoreEnumLiteral="xcore.ecore#//LoopType/WhileDo"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="xcore.ecore#//Composable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Composable/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="xcore.ecore#//Connector">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Connector/showedName"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="xcore.ecore#//CompositionConnector">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference xcore.ecore#//CompositionConnector/connections"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//Aggregator"/>
+    <genClasses ecoreClass="xcore.ecore#//Sequencer"/>
+    <genClasses ecoreClass="xcore.ecore#//Selector">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//Selector/input"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="xcore.ecore#//AdapterConnector">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//AdapterConnector/input"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference xcore.ecore#//AdapterConnector/connection"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//Loop">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Loop/loopType"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//Guard"/>
+    <genClasses image="false" ecoreClass="xcore.ecore#//Connection"/>
+    <genClasses ecoreClass="xcore.ecore#//CoordinationConnection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//CoordinationConnection/condition"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference xcore.ecore#//CoordinationConnection/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference xcore.ecore#//CoordinationConnection/target"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="xcore.ecore#//Component">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Component/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Component/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Component/comment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Component/verified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Component/valid"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//AtomicComponent">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//AtomicComponent/computationUnit"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//ComputationUnit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//ComputationUnit/implementationLanguage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//ComputationUnit/packageName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//ComputationUnit/interfaceCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//ComputationUnit/sourceCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//ComputationUnit/methods"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference xcore.ecore#//ComputationUnit/atomicComponent"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//Method">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Method/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Method/comment"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//Method/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//CompositeComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//CompositeComponent/isSystem"/>
+      <genOperations ecoreOperation="xcore.ecore#//CompositeComponent/addAll">
+        <genParameters ecoreParameter="xcore.ecore#//CompositeComponent/addAll/data"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="xcore.ecore#//Data">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Data/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Data/dataType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference xcore.ecore#//Data/dataChannels"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="xcore.ecore#//Parameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Parameter/order"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference xcore.ecore#//Parameter/service"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//Input"/>
+    <genClasses image="false" ecoreClass="xcore.ecore#//Resource"/>
+    <genClasses ecoreClass="xcore.ecore#//Output"/>
+    <genClasses ecoreClass="xcore.ecore#//DataElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//DataElement/range"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//DataElement/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//DataElement/oValue"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference xcore.ecore#//DataElement/component"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//DataChannel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//DataChannel/policy"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference xcore.ecore#//DataChannel/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference xcore.ecore#//DataChannel/target"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//ServiceReference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//ServiceReference/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference xcore.ecore#//ServiceReference/service"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//Service">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Service/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Service/comment"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//Service/parameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//Service/contracts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//Service/serviceReferences"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//Contract">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Contract/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Contract/preCondition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//Contract/postCondition"/>
+    </genClasses>
+    <genClasses ecoreClass="xcore.ecore#//ComponentInstance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xcore.ecore#//ComponentInstance/componentType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//ComponentInstance/selectedServices"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//ComponentInstance/dataElements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//ComponentInstance/componentReference"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="xcore.ecore#//Provider">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//Provider/services"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//Provider/dataElements"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="xcore.ecore#//Composite">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//Composite/composables"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//Composite/connections"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xcore.ecore#//Composite/dataChannels"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

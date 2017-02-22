@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.spray.atomic; singleton:=true
+Require-Bundle: org.eclipse.graphiti;bundle-version="0.10.0",org.eclip
+ se.graphiti.ui;bundle-version="0.10.0",org.eclipselabs.spray.runtime.
+ graphiti,org.eclipselabs.spray.shapes,org.eclipselabs.spray.styles,or
+ g.eclipse.ui.views.properties.tabbed;bundle-version="3.5.200",org.ecl
+ ipse.emf.transaction;bundle-version="1.4.0",org.eclipse.jdt.core,org.
+ eclipse.ui.ide,org.eclipse.core.filesystem,xman.commons,org.eclipse.e
+ mf.common,xman.xtend.codegenerator
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: The University of Manchester
+Import-Package: org.eclipse.xtext.service,org.eclipse.xtext.ui.editor,
+ org.eclipse.xtext.ui.guice,org.eclipse.xtext.ui.resource,org.eclipse.
+ xtext.util,org.eclipselabs.spray.styles.generator.util,uk.xman.xcore,
+ uk.xman.xcore.util
+Export-Package: xman.spray.atomic.diagram,xman.spray.atomic.util
+Bundle-Name: X-MAN Atomic
+Bundle-Version: 2.1.0.201511251205
+Bundle-ClassPath: .
+Bundle-Activator: xman.spray.atomic.Activator
+

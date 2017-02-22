@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.xcore.statechart;singleton:=true
+Export-Package: uk.xcore.statechart; uses:="org.eclipse.emf.ecore,  or
+ g.eclipse.emf.common.util",uk.xcore.statechart.impl; uses:="uk.xcore.
+ statechart,  org.eclipse.emf.ecore,  org.eclipse.emf.ecore.impl,  org
+ .eclipse.emf.common.util,  org.eclipse.emf.common.notify",uk.xcore.st
+ atechart.util; uses:="org.eclipse.emf.ecore,  uk.xcore.statechart,  o
+ rg.eclipse.emf.common.notify,  org.eclipse.emf.common.notify.impl,  o
+ rg.eclipse.emf.ecore.util"
+Bundle-Name: X-MAN StateChart
+Bundle-Version: 2.1.0.201511251205
+Bundle-ClassPath: .
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibil
+ ity:=reexport,org.eclipse.xtext.xbase.lib,org.eclipse.emf.ecore.xcore
+ .lib,xman.xcore.statechart;visibility:=reexport
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+

@@ -1,0 +1,17 @@
+<extension
+      point="org.eclipse.ui.newWizards">
+      <category
+         name="FamilyArchitectureDesign"
+         id="org.eclipselabs.spray.FamilyArchitectureDesign">
+         </category>
+   <wizard
+         category="org.eclipselabs.spray.FamilyArchitectureDesign"
+         class="fxman.spray.architecture.internal.ExecutableExtensionFactory:org.eclipselabs.spray.runtime.graphiti.wizard.NewDiagramWizard"
+         descriptionImage="icons/FamilyArchitectureDesign-32.png"
+         icon="icons/FamilyArchitectureDesign-16.png"
+         id="org.eclipselabs.spray.FamilyArchitectureDesign.NewDiagramWizard"
+         name="New FamilyArchitectureDesign Diagram"
+         preferredPerspectives="org.eclipse.graphiti.examples.common.perspective.GFPerspective"
+         project="false">
+   </wizard>
+</extension>

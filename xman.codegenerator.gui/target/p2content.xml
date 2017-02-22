@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='xman.codegenerator.gui' version='2.1.0.201511251205'>
+    <update id='xman.codegenerator.gui' range='[0.0.0,2.1.0.201511251205)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='codegenerator.gui'/>
+      <property name='org.eclipse.equinox.p2.provider' value='The University of Manchester'/>
+      <property name='maven-groupId' value='uk.xman.tool'/>
+      <property name='maven-artifactId' value='xman.codegenerator.gui'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+    </properties>
+    <provides size='3'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='xman.codegenerator.gui' version='2.1.0.201511251205'/>
+      <provided namespace='osgi.bundle' name='xman.codegenerator.gui' version='2.1.0.201511251205'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='16'>
+      <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.databinding' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.apache.log4j' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='xman.xtend.conditiondsl' range='1.0.0'/>
+      <required namespace='osgi.bundle' name='xman.xtend.conditiondsl.ui' range='1.0.0'/>
+      <required namespace='osgi.bundle' name='xman.commons' range='1.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.graphiti' range='0.10.1'/>
+      <required namespace='osgi.bundle' name='xman.xcore.metamodel' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='com.google.inject' range='3.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.xtext' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='xman.xtend.codegenerator' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.xtext.generator' range='0.0.0'/>
+      <required namespace='java.package' name='xman.spray.atomic.diagram' range='0.0.0'/>
+      <required namespace='java.package' name='xman.spray.atomic.util' range='0.0.0'/>
+      <required namespace='java.package' name='xman.spray.composite.diagram' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='xman.codegenerator.gui' version='2.1.0.201511251205'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: xman.codegenerator.gui;singleton:=true&#xA;Bundle-Version: 2.1.0.201511251205&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

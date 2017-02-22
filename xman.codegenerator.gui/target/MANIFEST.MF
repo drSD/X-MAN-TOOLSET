@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xman.codegenerator.gui;singleton:=true
+Bundle-Name: codegenerator.gui
+Bundle-Version: 2.1.0.201511251205
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
+ re.databinding,org.apache.log4j,xman.xtend.conditiondsl;bundle-versio
+ n="1.0.0",xman.xtend.conditiondsl.ui;bundle-version="1.0.0",xman.comm
+ ons;bundle-version="1.0.0",org.eclipse.graphiti;bundle-version="0.10.
+ 1",xman.xcore.metamodel,com.google.inject;bundle-version="3.0.0",org.
+ eclipse.xtext,xman.xtend.codegenerator
+Bundle-ManifestVersion: 2
+Bundle-Activator: xman.codegenerator.gui.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+Import-Package: org.eclipse.xtext.generator,xman.spray.atomic.diagram,
+ xman.spray.atomic.util,xman.spray.composite.diagram
+

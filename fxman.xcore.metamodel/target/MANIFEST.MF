@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: fxman.xcore.metamodel;singleton:=true
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibil
+ ity:=reexport,org.eclipse.xtext.xbase.lib,org.eclipse.emf.ecore.xcore
+ .lib,xman.xcore.metamodel;bundle-version="0.1.0";visibility:=reexport
+ ,org.junit;bundle-version="4.11.0"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: The University of Manchester
+Import-Package: org.apache.commons.lang3,uk.man.xman.project.console,u
+ k.man.xman.project.support
+Export-Package: fxman.metamodel.helper; uses:="uk.fxman",org.paukov.co
+ mbinatorics,org.paukov.combinatorics.combination.multi; uses:="org.pa
+ ukov.combinatorics",org.paukov.combinatorics.combination.simple; uses
+ :="org.paukov.combinatorics",org.paukov.combinatorics.composition; us
+ es:="org.paukov.combinatorics",org.paukov.combinatorics.partition; us
+ es:="org.paukov.combinatorics",org.paukov.combinatorics.permutations;
+  uses:="org.paukov.combinatorics",org.paukov.combinatorics.subsets; u
+ ses:="org.paukov.combinatorics",org.paukov.combinatorics.util; uses:=
+ "org.paukov.combinatorics",org.paukov.examples; uses:="org.paukov.com
+ binatorics",org.paukov.tool,uk.fxman; uses:="org.eclipse.emf.ecore,  
+ uk.xman.xcore,  org.eclipse.emf.common.util",uk.fxman.impl; uses:="or
+ g.eclipse.emf.ecore,  org.eclipse.emf.ecore.impl,  uk.xman.xcore,  or
+ g.eclipse.emf.common.util,  uk.fxman,  org.eclipse.emf.common.notify"
+ ,uk.fxman.util; uses:="org.eclipse.emf.ecore,  uk.xman.xcore,  uk.fxm
+ an,  org.eclipse.emf.common.notify,  org.eclipse.emf.common.notify.im
+ pl,  org.eclipse.emf.ecore.util"
+Bundle-Name: FX-MAN MetaModel
+Bundle-Version: 2.1.0.201511251205
+Bundle-ClassPath: .,lib/combinatoricslib-2.1.jar
+Bundle-Localization: plugin
+

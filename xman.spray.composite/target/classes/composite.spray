@@ -1,0 +1,142 @@
+/*************************************************************************************
+ *
+ * Spray diagram definition
+ * 
+ * This file contains the definition of a graphical editor using the Spray Language.
+ * Refer to http://code.google.com/a/eclipselabs.org/p/spray/ for documentation.
+ *
+ * See also composite.properties to configure generator properties.
+ *************************************************************************************/
+ 
+import xcore.*  
+ 
+diagram CompositeDesign for CompositeComponent 
+ 
+class DataElement icon "shared/dataElement.gif" {
+	shape DataItem {
+		name into label 
+		constant "d" into constantLabel
+	}
+	behavior {
+		create into dataElements "Data Element" palette "Data"
+	}
+}  
+ 
+class Service icon "shared/service.gif" {
+	shape ServiceShape {
+		name into serviceNameLabel
+		reference parameters into serviceParameterAndReference
+		reference serviceReferences into serviceParameterAndReference
+	}
+	behavior {
+		create into services palette "Services"
+	}
+}
+
+class ServiceReference icon "shared/servRef.gif" {
+	shape ServiceReferenceShape {
+		name into serviceOriginLabel
+	}
+	behavior {
+		create palette "Services"
+	}
+}
+
+class Input icon "shared/input.gif" {
+	shape InputShape {
+		name into inputParameterLabel
+	}
+	behavior {
+		create palette "Data"
+	}
+}
+
+class Output icon "shared/output.gif" {
+	shape OutputShape {
+		name into outputParameterLabel
+	}
+	behavior {
+		create palette "Data"
+	}
+}
+
+class Guard icon "connectors/adapter/guard.png" {
+	shape GuardShape {
+		showedName into guardLabel
+		reference input into inputParameter
+	}
+	behavior {
+		create into composables palette "Connectors"
+	}
+}
+
+class Loop icon "connectors/adapter/loop.png" {
+	shape LoopShape {
+		showedName into loopLabel
+		reference input into inputParameter
+	}
+	behavior {
+		create into composables palette "Connectors"
+	}
+}
+
+class Sequencer icon "connectors/composite/sequencer.png" {
+	shape SequencerShape {
+		showedName into sequencerLabel
+	}
+	behavior {
+		create into composables palette "Connectors"
+	}
+}
+
+class Selector icon "connectors/composite/selector.png" {
+	shape SelectorShape {
+		showedName into selectorLabel
+		reference input into inputParameter
+	}
+	behavior {
+		create into composables palette "Connectors"
+	}
+}
+ 
+class Aggregator icon "connectors/composite/aggregator.png" {
+	shape AggregatorShape {
+		showedName into aggregatorLabel
+	}
+	behavior {
+		create into composables palette "Connectors"
+	}
+}
+
+class ComponentInstance icon "repository/componentInstance.gif" {
+	shape ComponentInstanceShape {
+		name into componentInstanceNameLabel
+		reference selectedServices into selectedServicesHook
+		reference dataElements into selectedServicesHook
+	}
+	behavior { 
+		create into composables palette "Repository"
+	}
+}
+
+class CoordinationConnection icon "connection16.gif" {
+	connection CoordinationConnection {
+		condition into connectionLabel
+	}
+	{
+		from source;
+		to target; 
+	}
+	behavior {
+		create into connections "Coordination" palette "Connections"
+	}
+}
+
+class DataChannel icon "connection16.gif" {
+	connection DataChannelConnection {
+		from source to target
+	}
+	behavior {
+		create into dataChannels "Data Channel" palette "Connections"
+	}
+}

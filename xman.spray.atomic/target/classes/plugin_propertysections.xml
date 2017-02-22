@@ -1,0 +1,127 @@
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="AtomicDesign.PropertyContributor">
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.DataElementNameSection"
+   filter="xman.spray.atomic.property.DataElementFilter"
+   id="AtomicDesign.main.tab.DataElement.name">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.DataElementDataTypeSection"
+   filter="xman.spray.atomic.property.DataElementFilter"
+   afterSection="AtomicDesign.main.tab.DataElement.name"
+   id="AtomicDesign.main.tab.DataElement.dataType">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.DataElementRangeSection"
+   filter="xman.spray.atomic.property.DataElementFilter"
+   afterSection="AtomicDesign.main.tab.DataElement.dataType"
+   id="AtomicDesign.main.tab.DataElement.range">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.DataElementValueSection"
+   filter="xman.spray.atomic.property.DataElementFilter"
+   afterSection="AtomicDesign.main.tab.DataElement.range"
+   id="AtomicDesign.main.tab.DataElement.value">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.DataElementOValueSection"
+   filter="xman.spray.atomic.property.DataElementFilter"
+   afterSection="AtomicDesign.main.tab.DataElement.value"
+   id="AtomicDesign.main.tab.DataElement.oValue">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="AtomicDesign.PropertyContributor">
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.ComputationUnitImplementationLanguageSection"
+   filter="xman.spray.atomic.property.ComputationUnitFilter"
+   id="AtomicDesign.main.tab.ComputationUnit.implementationLanguage">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.ComputationUnitPackageNameSection"
+   filter="xman.spray.atomic.property.ComputationUnitFilter"
+   afterSection="AtomicDesign.main.tab.ComputationUnit.implementationLanguage"
+   id="AtomicDesign.main.tab.ComputationUnit.packageName">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.ComputationUnitInterfaceCodeSection"
+   filter="xman.spray.atomic.property.ComputationUnitFilter"
+   afterSection="AtomicDesign.main.tab.ComputationUnit.packageName"
+   id="AtomicDesign.main.tab.ComputationUnit.interfaceCode">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.ComputationUnitSourceCodeSection"
+   filter="xman.spray.atomic.property.ComputationUnitFilter"
+   afterSection="AtomicDesign.main.tab.ComputationUnit.interfaceCode"
+   id="AtomicDesign.main.tab.ComputationUnit.sourceCode">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="AtomicDesign.PropertyContributor">
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.ServiceNameSection"
+   filter="xman.spray.atomic.property.ServiceFilter"
+   id="AtomicDesign.main.tab.Service.name">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.ServiceCommentSection"
+   filter="xman.spray.atomic.property.ServiceFilter"
+   afterSection="AtomicDesign.main.tab.Service.name"
+   id="AtomicDesign.main.tab.Service.comment">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="AtomicDesign.PropertyContributor">
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.InputNameSection"
+   filter="xman.spray.atomic.property.InputFilter"
+   id="AtomicDesign.main.tab.Input.name">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.InputDataTypeSection"
+   filter="xman.spray.atomic.property.InputFilter"
+   afterSection="AtomicDesign.main.tab.Input.name"
+   id="AtomicDesign.main.tab.Input.dataType">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.InputOrderSection"
+   filter="xman.spray.atomic.property.InputFilter"
+   afterSection="AtomicDesign.main.tab.Input.dataType"
+   id="AtomicDesign.main.tab.Input.order">
+  </propertySection>
+    </propertySections>
+</extension>
+
+<extension
+    point="org.eclipse.ui.views.properties.tabbed.propertySections">
+    <propertySections contributorId="AtomicDesign.PropertyContributor">
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.OutputNameSection"
+   filter="xman.spray.atomic.property.OutputFilter"
+   id="AtomicDesign.main.tab.Output.name">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.OutputDataTypeSection"
+   filter="xman.spray.atomic.property.OutputFilter"
+   afterSection="AtomicDesign.main.tab.Output.name"
+   id="AtomicDesign.main.tab.Output.dataType">
+  </propertySection>
+  <propertySection tab="AtomicDesign.main.tab"
+   class="xman.spray.atomic.internal.ExecutableExtensionFactory:xman.spray.atomic.property.OutputOrderSection"
+   filter="xman.spray.atomic.property.OutputFilter"
+   afterSection="AtomicDesign.main.tab.Output.dataType"
+   id="AtomicDesign.main.tab.Output.order">
+  </propertySection>
+    </propertySections>
+</extension>
+

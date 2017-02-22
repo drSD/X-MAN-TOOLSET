@@ -1,0 +1,16 @@
+/Action.java
+/Condition.java
+/End.java
+/Event.java
+/IConnector.java
+/IState.java
+/MandatoryState.java
+/Start.java
+/State.java
+/StateChart.java
+/StatechartFactory.java
+/StatechartPackage.java
+/Transition.java
+/Triple.java
+/Vertex.java
+/Xor.java

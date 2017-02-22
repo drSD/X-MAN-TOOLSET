@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='xman.commons' version='2.1.0.201511251205' singleton='false'>
+    <update id='xman.commons' range='[0.0.0,2.1.0.201511251205)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='X-MAN Commons'/>
+      <property name='org.eclipse.equinox.p2.provider' value='The University of Manchester'/>
+      <property name='maven-groupId' value='uk.xman.tool'/>
+      <property name='maven-artifactId' value='xman.commons'/>
+      <property name='maven-version' value='2.1.0-SNAPSHOT'/>
+    </properties>
+    <provides size='10'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='xman.commons' version='2.1.0.201511251205'/>
+      <provided namespace='osgi.bundle' name='xman.commons' version='2.1.0.201511251205'/>
+      <provided namespace='java.package' name='org.apache.commons.lang3' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.man.xman.project.console' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.man.xman.project.feature' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.man.xman.project.feature.helper' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.man.xman.project.markers' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.man.xman.project.support' version='0.0.0'/>
+      <provided namespace='java.package' name='uk.xman.dialogs' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='13'>
+      <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='3.5.200'/>
+      <required namespace='osgi.bundle' name='org.eclipse.graphiti.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='3.8.101'/>
+      <required namespace='osgi.bundle' name='org.eclipse.graphiti' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.emf.transaction' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='xman.xcore.metamodel' range='0.1.0'/>
+      <required namespace='osgi.bundle' name='org.apache.log4j' range='0.0.0'/>
+      <required namespace='java.package' name='org.apache.commons.lang' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='xman.commons' version='2.1.0.201511251205'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: xman.commons&#xA;Bundle-Version: 2.1.0.201511251205&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

@@ -1,0 +1,127 @@
+/*************************************************************************************
+ *
+ * Spray styles definition
+ * 
+ * This file contains the definition of style classes using the Styles Language.
+ * Refer to http://code.google.com/a/eclipselabs.org/p/spray/ for documentation.
+ *************************************************************************************/
+
+// Add definition of styles here.
+style ActivitychartDefaultStyle {
+    description = "The default style of the activitychart diagram type."
+    // transparency = 0.95
+    // background-color = black
+    // line-color = black
+    // line-style = solid
+    // line-width = 1
+    // font-color = black
+    // font-name = "Tahoma"
+    font-size = 12
+    // font-bold = yes
+}
+
+gradient BlueToWhite {
+	area(color = RGB(220,220,255), offset = 0.0)
+	area(color = RGB(220,220,255), offset = 0.36)
+	area(color = RGB(220,220,255), offset = 0.361)
+	area(color = white, offset = 1.0)
+}
+
+style StyleWithGradientControlActivity {
+	background-color = BlueToWhite
+	gradient-orientation = vertical
+	highlighting(selected=light-blue)
+	line-color=RGB(100,100,255)
+	line-width=2
+}
+gradient OrangeToWhite {
+	area(color = RGB(255,250,240), offset = 0.0)
+	area(color = RGB(255,250,240), offset = 0.36)
+	area(color = RGB(255,250,240), offset = 0.361)
+	area(color = white, offset = 1.0)
+}
+
+style StyleWithGradientActivity {
+	background-color = OrangeToWhite
+	highlighting(selected=light-orange)
+	gradient-orientation = vertical
+	line-width=2
+	line-color=RGB(215,200,140)
+	
+}
+gradient GreenToWhite {
+	area(color = RGB(200,255,200), offset = 0.0)
+	area(color = RGB(200,255,200), offset = 0.36)
+	area(color = RGB(200,255,200), offset = 0.361)
+	area(color = white, offset = 1.0)
+}
+
+style StyleWithGradientDataStore {
+	background-color = GreenToWhite
+	gradient-orientation = vertical
+	line-width=2
+	line-color=light-green//RGB(200,255,200)
+	highlighting(selected=light-green)
+}
+gradient GrayToWhite {
+	area(color = RGB(230,230,230), offset = 0.0)
+	area(color = RGB(230,230,230), offset = 0.36)
+	area(color = RGB(230,230,230), offset = 0.361)
+	area(color = white, offset = 1.0)
+}
+
+style StyleWithGradientExternal {
+	background-color = GrayToWhite
+	gradient-orientation = vertical
+	line-width=2
+	line-color=RGB(100,100,100)//RGB(220,220,220)
+	highlighting(selected=light-gray)
+}
+style FontActivity {
+	font-size=10
+	font-bold=yes
+	font-name="Calibri"
+	background-color=transparent
+}
+style FontActivity2 {
+	font-size=10
+	font-bold=yes
+	font-name="Calibri"
+	background-color=transparent
+}
+style FontControlActivity{
+	font-size=10
+	font-bold=yes
+	font-name="Calibri"
+	background-color=RGB(180,180,255)
+}
+style FontControlActivity2{
+	font-size=10
+	font-bold=yes
+	font-name="Calibri"
+	background-color=transparent
+}
+style FontDataStore{
+	font-size=10
+	font-bold=yes
+	font-name="Calibri"
+	background-color=RGB(180,255,180)
+}
+style FontDataStore2{
+	font-size=10
+	font-bold=yes
+	font-name="Calibri"
+	background-color=transparent
+}
+style FontExternal{
+	font-size=10
+	font-bold=yes
+	font-name="Calibri"
+	background-color=RGB(230,230,230)
+}
+style FontExternal2{
+	font-size=10
+	font-bold=yes
+	font-name="Calibri"
+	background-color=transparent
+}
