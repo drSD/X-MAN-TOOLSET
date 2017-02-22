@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_zTARAE_1EeaGO_AN1C5wOw" type="EcoreTools" name="statechart.ecorediag" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_zTEicE_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTFJgk_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTFJg0_1EeaGO_AN1C5wOw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTFJhE_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTFJhU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTFJhk_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTFwkE_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTFwkU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTFwkk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTFwk0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTFJgE_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//StateChart"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTFJgU_1EeaGO_AN1C5wOw" x="368" y="325"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTFwlE_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTGXoE_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTGXoU_1EeaGO_AN1C5wOw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTGXok_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTGXo0_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTGXpE_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTGXpU_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTGXpk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTGXp0_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTGXqE_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTFwlU_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//IState"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTFwlk_1EeaGO_AN1C5wOw" x="184" y="214"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTG-sE_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTG-s0_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTG-tE_1EeaGO_AN1C5wOw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTG-tU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTG-tk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTG-t0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTHlwE_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTHlwU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTHlwk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTHlw0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTG-sU_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//MandatoryState"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTG-sk_1EeaGO_AN1C5wOw" x="185" y="325"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTHlxE_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTHlx0_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTIM0E_1EeaGO_AN1C5wOw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTIM0U_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTIM0k_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTIM00_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTIM1E_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTIM1U_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTIM1k_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTIM10_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTHlxU_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//End"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTHlxk_1EeaGO_AN1C5wOw" x="135" y="405"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTIM2E_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTIz4E_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTIz4U_1EeaGO_AN1C5wOw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTIz4k_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTIz40_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTIz5E_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTIz5U_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTIz5k_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTIz50_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTIz6E_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTIM2U_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//Start"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTIM2k_1EeaGO_AN1C5wOw" x="250" y="405"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTIz6U_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTJa8E_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTJa8U_1EeaGO_AN1C5wOw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_zTJa-U_1EeaGO_AN1C5wOw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="statechart.ecore#//State/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zTJa-k_1EeaGO_AN1C5wOw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTJa8k_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTJa80_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTJa9E_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTJa9U_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTJa9k_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTJa90_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTJa-E_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTIz6k_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//State"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTIz60_1EeaGO_AN1C5wOw" x="20" y="325"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTKCAE_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTKCA0_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTKCBE_1EeaGO_AN1C5wOw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTKCBU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTKCBk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTKCB0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTKpEE_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTKpEU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTKpEk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTKpE0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTKCAU_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//Vertex"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTKCAk_1EeaGO_AN1C5wOw" x="368" y="111"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTKpFE_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTKpF0_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTLQIE_1EeaGO_AN1C5wOw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTLQIU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTLQIk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTLQI0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTLQJE_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTLQJU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTLQJk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTLQJ0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTKpFU_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//IConnector"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTKpFk_1EeaGO_AN1C5wOw" x="552" y="214"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTLQKE_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTL3ME_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTL3MU_1EeaGO_AN1C5wOw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_zTL3OU_1EeaGO_AN1C5wOw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="statechart.ecore#//Xor/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zTL3Ok_1EeaGO_AN1C5wOw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTL3Mk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTL3M0_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTL3NE_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTL3NU_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTL3Nk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTL3N0_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTL3OE_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTLQKU_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//Xor"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTLQKk_1EeaGO_AN1C5wOw" x="540" y="320"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTMeQE_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTMeQ0_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTMeRE_1EeaGO_AN1C5wOw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_zTNFUE_1EeaGO_AN1C5wOw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="statechart.ecore#//Transition/expression"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zTNFUU_1EeaGO_AN1C5wOw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTMeRU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTMeRk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTMeR0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTMeSE_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTMeSU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTMeSk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTMeS0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTMeQU_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//Transition"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTMeQk_1EeaGO_AN1C5wOw" x="346" y="214"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTNFUk_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTNFVU_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTNsYE_1EeaGO_AN1C5wOw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTNsYU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTNsYk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTNsY0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTNsZE_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTNsZU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTNsZk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTNsZ0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTNFU0_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//Triple"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTNFVE_1EeaGO_AN1C5wOw" x="60" y="215"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTNsaE_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTOTcE_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTOTcU_1EeaGO_AN1C5wOw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_zTO6gE_1EeaGO_AN1C5wOw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="statechart.ecore#//Event/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zTO6gU_1EeaGO_AN1C5wOw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTOTck_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTOTc0_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTOTdE_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTOTdU_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTOTdk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTOTd0_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTOTeE_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTNsaU_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//Event"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTNsak_1EeaGO_AN1C5wOw" x="25" y="55"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTO6gk_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTO6hU_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTPhkE_1EeaGO_AN1C5wOw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_zTPhmE_1EeaGO_AN1C5wOw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="statechart.ecore#//Condition/conditionCase"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zTPhmU_1EeaGO_AN1C5wOw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTPhkU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTPhkk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTPhk0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTPhlE_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTPhlU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTPhlk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTPhl0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTO6g0_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//Condition"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTO6hE_1EeaGO_AN1C5wOw" x="170" y="55"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTQIoE_1EeaGO_AN1C5wOw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_zTQIo0_1EeaGO_AN1C5wOw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_zTQIpE_1EeaGO_AN1C5wOw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_zTQvsE_1EeaGO_AN1C5wOw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="statechart.ecore#//Action/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zTQvsU_1EeaGO_AN1C5wOw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTQIpU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTQIpk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTQIp0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTQIqE_1EeaGO_AN1C5wOw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTQIqU_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTQIqk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTQIq0_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTQIoU_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="statechart.ecore#//Action"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTQIok_1EeaGO_AN1C5wOw" x="370" y="50"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zTQvsk_1EeaGO_AN1C5wOw" type="1003">
+    <children xmi:type="notation:Node" xmi:id="_zTRWwE_1EeaGO_AN1C5wOw" type="4007"/>
+    <children xmi:type="notation:Node" xmi:id="_zTRWwU_1EeaGO_AN1C5wOw" type="5007">
+      <children xmi:type="notation:Node" xmi:id="_zTRWxU_1EeaGO_AN1C5wOw" type="2007">
+        <element xmi:type="ecore:EStringToStringMapEntry" href="statechart.ecore#//%http:%2F%2Fwww.eclipse.org%2Femf%2F2002%2FGenModel%/@details.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zTRWxk_1EeaGO_AN1C5wOw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zTRWwk_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zTRWw0_1EeaGO_AN1C5wOw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zTRWxE_1EeaGO_AN1C5wOw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zTQvs0_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element xmi:type="ecore:EAnnotation" href="statechart.ecore#//%http:%2F%2Fwww.eclipse.org%2Femf%2F2002%2FGenModel%"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTQvtE_1EeaGO_AN1C5wOw" x="365" y="405"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_zTARAU_1EeaGO_AN1C5wOw"/>
+  <element xmi:type="ecore:EPackage" href="statechart.ecore#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_zTRWx0_1EeaGO_AN1C5wOw" type="3002" source="_zTEicE_1EeaGO_AN1C5wOw" target="_zTFwlE_1EeaGO_AN1C5wOw">
+    <children xmi:type="notation:Node" xmi:id="_zTR90E_1EeaGO_AN1C5wOw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTR90U_1EeaGO_AN1C5wOw" x="3" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTR90k_1EeaGO_AN1C5wOw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTR900_1EeaGO_AN1C5wOw" x="13" y="16"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTRWyE_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTRWyU_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="statechart.ecore#//StateChart/states"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTRWyk_1EeaGO_AN1C5wOw" points="[0, 0, 133, 68]$[-133, -68, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUxyoE_1EeaGO_AN1C5wOw" id="(0.24509803921568626,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUxyoU_1EeaGO_AN1C5wOw" id="(0.7450980392156863,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTR91E_1EeaGO_AN1C5wOw" type="3002" source="_zTEicE_1EeaGO_AN1C5wOw" target="_zTKpFE_1EeaGO_AN1C5wOw">
+    <children xmi:type="notation:Node" xmi:id="_zTSk4E_1EeaGO_AN1C5wOw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTSk4U_1EeaGO_AN1C5wOw" x="3" y="-47"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTSk4k_1EeaGO_AN1C5wOw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTSk40_1EeaGO_AN1C5wOw" x="18" y="-12"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTR91U_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTR91k_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="statechart.ecore#//StateChart/connector"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTR910_1EeaGO_AN1C5wOw" points="[0, 0, -133, 68]$[133, -68, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUxyok_1EeaGO_AN1C5wOw" id="(0.7450980392156863,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUyZsE_1EeaGO_AN1C5wOw" id="(0.24509803921568626,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTSk5E_1EeaGO_AN1C5wOw" type="3002" source="_zTEicE_1EeaGO_AN1C5wOw" target="_zTMeQE_1EeaGO_AN1C5wOw">
+    <children xmi:type="notation:Node" xmi:id="_zTSk6E_1EeaGO_AN1C5wOw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTSk6U_1EeaGO_AN1C5wOw" x="-6" y="-31"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTSk6k_1EeaGO_AN1C5wOw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTSk60_1EeaGO_AN1C5wOw" x="-1" y="16"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTSk5U_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTSk5k_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="statechart.ecore#//StateChart/transition"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTSk50_1EeaGO_AN1C5wOw" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUyZsU_1EeaGO_AN1C5wOw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUzAwE_1EeaGO_AN1C5wOw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTTL8E_1EeaGO_AN1C5wOw" type="3003" source="_zTFwlE_1EeaGO_AN1C5wOw" target="_zTKCAE_1EeaGO_AN1C5wOw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTTL8U_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTTL8k_1EeaGO_AN1C5wOw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTTL80_1EeaGO_AN1C5wOw" points="[0, 0, -158, 60]$[0, -30, -158, 30]$[158, -30, 0, 30]$[158, -60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU35Qk_1EeaGO_AN1C5wOw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU4gUE_1EeaGO_AN1C5wOw" id="(0.24509803921568626,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTTL9E_1EeaGO_AN1C5wOw" type="3003" source="_zTG-sE_1EeaGO_AN1C5wOw" target="_zTFwlE_1EeaGO_AN1C5wOw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTTL9U_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTTL9k_1EeaGO_AN1C5wOw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTTL90_1EeaGO_AN1C5wOw" points="[10, 0, 0, 70]$[10, -70, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUzn0k_1EeaGO_AN1C5wOw" id="(0.35398230088495575,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUzn00_1EeaGO_AN1C5wOw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTTL-E_1EeaGO_AN1C5wOw" type="3003" source="_zTHlxE_1EeaGO_AN1C5wOw" target="_zTG-sE_1EeaGO_AN1C5wOw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTTL-U_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTTL-k_1EeaGO_AN1C5wOw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTTL-0_1EeaGO_AN1C5wOw" points="[35, 0, -11, 69]$[35, -69, -11, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUzAwU_1EeaGO_AN1C5wOw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUzAwk_1EeaGO_AN1C5wOw" id="(0.3274336283185841,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTTzAE_1EeaGO_AN1C5wOw" type="3003" source="_zTIM2E_1EeaGO_AN1C5wOw" target="_zTG-sE_1EeaGO_AN1C5wOw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTTzAU_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTTzAk_1EeaGO_AN1C5wOw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTTzA0_1EeaGO_AN1C5wOw" points="[-30, 0, 22, 39]$[-30, -39, 22, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUzn0E_1EeaGO_AN1C5wOw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUzn0U_1EeaGO_AN1C5wOw" id="(0.6637168141592921,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTTzBE_1EeaGO_AN1C5wOw" type="3002" source="_zTIz6U_1EeaGO_AN1C5wOw" target="_zTIz6U_1EeaGO_AN1C5wOw">
+    <children xmi:type="notation:Node" xmi:id="_zTTzCE_1EeaGO_AN1C5wOw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTTzCU_1EeaGO_AN1C5wOw" x="-27" y="-29"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTTzCk_1EeaGO_AN1C5wOw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTTzC0_1EeaGO_AN1C5wOw" x="13" y="13"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTTzBU_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTTzBk_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="statechart.ecore#//State/states"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTTzB0_1EeaGO_AN1C5wOw" points="[-26, 25, -26, 25]$[-26, 87, -26, 87]$[30, 87, 30, 87]$[30, 25, 30, 25]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTTzDE_1EeaGO_AN1C5wOw" type="3003" source="_zTIz6U_1EeaGO_AN1C5wOw" target="_zTFwlE_1EeaGO_AN1C5wOw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTTzDU_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTTzDk_1EeaGO_AN1C5wOw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTTzD0_1EeaGO_AN1C5wOw" points="[0, 0, -132, 68]$[0, -30, -132, 38]$[132, -30, 0, 38]$[132, -68, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU4gUU_1EeaGO_AN1C5wOw" id="(0.4956521739130435,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU4gUk_1EeaGO_AN1C5wOw" id="(0.24509803921568626,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTUaEE_1EeaGO_AN1C5wOw" type="3003" source="_zTKpFE_1EeaGO_AN1C5wOw" target="_zTKCAE_1EeaGO_AN1C5wOw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTUaEU_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTUaEk_1EeaGO_AN1C5wOw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTUaE0_1EeaGO_AN1C5wOw" points="[-1, 0, 159, 62]$[-1, -84, 159, -22]$[-134, -84, 26, -22]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU35QE_1EeaGO_AN1C5wOw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU35QU_1EeaGO_AN1C5wOw" id="(0.7450980392156863,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTVBIE_1EeaGO_AN1C5wOw" type="3003" source="_zTLQKE_1EeaGO_AN1C5wOw" target="_zTKpFE_1EeaGO_AN1C5wOw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTVBIU_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTVBIk_1EeaGO_AN1C5wOw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTVBI0_1EeaGO_AN1C5wOw" points="[0, 0, 0, 68]$[0, -68, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU3SME_1EeaGO_AN1C5wOw" id="(0.4956521739130435,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU3SMU_1EeaGO_AN1C5wOw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTVBJE_1EeaGO_AN1C5wOw" type="3002" source="_zTMeQE_1EeaGO_AN1C5wOw" target="_zTNFUk_1EeaGO_AN1C5wOw">
+    <children xmi:type="notation:Node" xmi:id="_zTVoME_1EeaGO_AN1C5wOw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTVoMU_1EeaGO_AN1C5wOw" x="-52" y="11"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTVoMk_1EeaGO_AN1C5wOw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTVoM0_1EeaGO_AN1C5wOw" x="13" y="11"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTVBJU_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTVBJk_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="statechart.ecore#//Transition/triple"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTVBJ0_1EeaGO_AN1C5wOw" points="[-35, 25, 236, -17]$[-57, 25, 214, -17]$[-57, -20, 214, -62]$[-261, -20, 10, -62]$[-261, 1, 10, -41]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU018k_1EeaGO_AN1C5wOw" id="(0.2465753424657534,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU1dAE_1EeaGO_AN1C5wOw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTVoNE_1EeaGO_AN1C5wOw" type="3002" source="_zTMeQE_1EeaGO_AN1C5wOw" target="_zTKCAE_1EeaGO_AN1C5wOw">
+    <children xmi:type="notation:Node" xmi:id="_zTVoOE_1EeaGO_AN1C5wOw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTVoOU_1EeaGO_AN1C5wOw" x="-22" y="7"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTWPQE_1EeaGO_AN1C5wOw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTWPQU_1EeaGO_AN1C5wOw" x="-2" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTVoNU_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTVoNk_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="statechart.ecore#//Transition/to"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTVoN0_1EeaGO_AN1C5wOw" points="[26, 0, 26, 62]$[26, -62, 26, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU0O4E_1EeaGO_AN1C5wOw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU0O4U_1EeaGO_AN1C5wOw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTWPQk_1EeaGO_AN1C5wOw" type="3002" source="_zTMeQE_1EeaGO_AN1C5wOw" target="_zTKCAE_1EeaGO_AN1C5wOw">
+    <children xmi:type="notation:Node" xmi:id="_zTWPRk_1EeaGO_AN1C5wOw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTWPR0_1EeaGO_AN1C5wOw" x="-22" y="15"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTWPSE_1EeaGO_AN1C5wOw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTWPSU_1EeaGO_AN1C5wOw" x="-2" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTWPQ0_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTWPRE_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="statechart.ecore#//Transition/from"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTWPRU_1EeaGO_AN1C5wOw" points="[-14, 0, -14, 62]$[-14, -62, -14, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU018E_1EeaGO_AN1C5wOw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU018U_1EeaGO_AN1C5wOw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTWPSk_1EeaGO_AN1C5wOw" type="3002" source="_zTNFUk_1EeaGO_AN1C5wOw" target="_zTNsaE_1EeaGO_AN1C5wOw">
+    <children xmi:type="notation:Node" xmi:id="_zTW2UE_1EeaGO_AN1C5wOw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTW2UU_1EeaGO_AN1C5wOw" x="-38" y="-22"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTW2Uk_1EeaGO_AN1C5wOw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTW2U0_1EeaGO_AN1C5wOw" x="7" y="-11"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTWPS0_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTWPTE_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="statechart.ecore#//Triple/events"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTWPTU_1EeaGO_AN1C5wOw" points="[-24, 20, -21, 131]$[-34, 20, -31, 131]$[-34, -111, -31, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU2EEU_1EeaGO_AN1C5wOw" id="(0.24509803921568626,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU2EEk_1EeaGO_AN1C5wOw" id="(0.4956521739130435,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTW2VE_1EeaGO_AN1C5wOw" type="3002" source="_zTNFUk_1EeaGO_AN1C5wOw" target="_zTO6gk_1EeaGO_AN1C5wOw">
+    <children xmi:type="notation:Node" xmi:id="_zTW2WE_1EeaGO_AN1C5wOw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTW2WU_1EeaGO_AN1C5wOw" x="-89" y="-7"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTW2Wk_1EeaGO_AN1C5wOw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTXdYE_1EeaGO_AN1C5wOw" x="-10" y="-17"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTW2VU_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTW2Vk_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="statechart.ecore#//Triple/conditions"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTW2V0_1EeaGO_AN1C5wOw" points="[-6, 0, -147, 111]$[-6, -75, -147, 36]$[142, -75, 1, 36]$[142, -111, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU1dAU_1EeaGO_AN1C5wOw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU2EEE_1EeaGO_AN1C5wOw" id="(0.49696969696969695,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_zTXdYU_1EeaGO_AN1C5wOw" type="3002" source="_zTNFUk_1EeaGO_AN1C5wOw" target="_zTQIoE_1EeaGO_AN1C5wOw">
+    <children xmi:type="notation:Node" xmi:id="_zTXdZU_1EeaGO_AN1C5wOw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTXdZk_1EeaGO_AN1C5wOw" x="-60" y="-94"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zTXdZ0_1EeaGO_AN1C5wOw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_zTXdaE_1EeaGO_AN1C5wOw" x="15" y="15"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_zTXdYk_1EeaGO_AN1C5wOw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zTXdY0_1EeaGO_AN1C5wOw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="statechart.ecore#//Triple/actions"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zTXdZE_1EeaGO_AN1C5wOw" points="[8, 0, -284, 116]$[8, -45, -284, 71]$[210, -45, -82, 71]$[210, -141, -82, -25]$[236, -141, -56, -25]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU2rIE_1EeaGO_AN1C5wOw" id="(0.7450980392156863,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU2rIU_1EeaGO_AN1C5wOw" id="(0.4956521739130435,1.0)"/>
+  </edges>
+</notation:Diagram>

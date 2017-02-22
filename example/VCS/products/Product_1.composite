@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xcore:CompositeComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xcore="uk.xman.xcore" name="Product_1">
+  <services name="InitVCS">
+    <parameters xsi:type="xcore:Input" name="command" dataChannels="//@dataChannels.0" order="0"/>
+    <parameters xsi:type="xcore:Input" name="hours" dataType="Float" dataChannels="//@dataChannels.1" order="0"/>
+    <parameters xsi:type="xcore:Input" name="miles" dataType="Float" dataChannels="//@dataChannels.2 //@dataChannels.3"/>
+    <parameters xsi:type="xcore:Input" name="fuelLv" dataType="Float" dataChannels="//@dataChannels.4"/>
+    <parameters xsi:type="xcore:Input" name="selSpeed" dataType="Float" dataChannels="//@dataChannels.5"/>
+    <parameters xsi:type="xcore:Input" name="currSpeed" dataType="Float" dataChannels="//@dataChannels.6"/>
+    <parameters xsi:type="xcore:Input" name="currMlg" dataType="Float" dataChannels="//@dataChannels.7"/>
+    <parameters xsi:type="xcore:Output" name="avgMPH" dataType="Float" dataChannels="//@dataChannels.8"/>
+    <parameters xsi:type="xcore:Output" name="avgMPG" dataType="Float" dataChannels="//@dataChannels.9"/>
+    <parameters xsi:type="xcore:Output" name="throttlePos" dataType="Float" dataChannels="//@dataChannels.10"/>
+    <parameters xsi:type="xcore:Output" name="objDist" dataType="Float" dataChannels="//@dataChannels.11"/>
+    <parameters xsi:type="xcore:Output" name="msg" dataType="String" dataChannels="//@dataChannels.12"/>
+    <serviceReferences name="FrontDetection.FrontDetection" service="//@composables.4/@selectedServices.0"/>
+    <serviceReferences name="AverageMPG.AverageMPG" service="//@composables.1/@selectedServices.0"/>
+    <serviceReferences name="AverageMPH.AverageMPH" service="//@composables.0/@selectedServices.0"/>
+    <serviceReferences name="Maintenance.Maintenance" service="//@composables.2/@selectedServices.0"/>
+    <serviceReferences/>
+  </services>
+  <dataElements name="trueBol" dataChannels="//@dataChannels.13"/>
+  <composables xsi:type="xcore:ComponentInstance" name="AverageMPH" componentType="AverageMPH">
+    <selectedServices name="AverageMPH">
+      <parameters xsi:type="xcore:Input" name="Hours" dataType="Float" dataChannels="//@dataChannels.1" order="0"/>
+      <parameters xsi:type="xcore:Input" name="Miles" dataType="Float" dataChannels="//@dataChannels.2" order="1"/>
+      <parameters xsi:type="xcore:Output" name="AverageMPH   " dataType="Float" dataChannels="//@dataChannels.8" order="2"/>
+    </selectedServices>
+    <componentReference xsi:type="xcore:AtomicComponent" name="AverageMPH">
+      <services name="AverageMPH">
+        <parameters xsi:type="xcore:Input" name="Hours" dataType="Float" order="0"/>
+        <parameters xsi:type="xcore:Input" name="Miles" dataType="Float" order="1"/>
+        <parameters xsi:type="xcore:Output" name="AverageMPH   " dataType="Float" order="0"/>
+      </services>
+      <computationUnit packageName="uk.vcs.atomic" interfaceCode="/*&#xD;&#xA;&#x9;&#x9;* This is Java interface of the component AverageMPH&#xD;&#xA;&#x9;&#x9;*/&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;package uk.vcs.atomic;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;import java.util.*;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;public interface AverageMPH {public  Float  AverageMPH (&#xD;&#xA;    &#x9;&#x9;Float Hours, &#xD;&#xA;    &#x9;&#x9;    &#x9;&#x9;Float Miles&#xD;&#xA;    &#x9;&#x9; ); &#xD;&#xA;}" sourceCode="/*&#xD;&#xA; * This is Java implementation of the atomic component AverageMPH&#xD;&#xA; */&#xD;&#xA;&#xD;&#xA;package uk.vcs.atomic;&#xD;&#xA;&#xD;&#xA;import java.util.*;&#xD;&#xA;&#xD;&#xA;import com.sun.org.apache.bcel.internal.generic.NEW;&#xD;&#xA;&#xD;&#xA;public class AverageMPHImpl implements AverageMPH {&#xD;&#xA;&#x9;/**&#xD;&#xA;&#x9; * Constructor of atomic component AverageMPH&#xD;&#xA;&#x9; */&#xD;&#xA;&#x9;public AverageMPHImpl() {&#xD;&#xA;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;public Float AverageMPH(Float Hours, Float Miles) {&#xD;&#xA;&#x9;&#x9;Float AverageMPH = null;&#xD;&#xA;&#x9;&#x9;// TODO: auto-generated code, to be implemented by developers&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;if (Hours.equals(Float.valueOf(0)))&#xD;&#xA;&#x9;&#x9;&#x9;return Float.valueOf(0);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;AverageMPH = Miles / Hours;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return AverageMPH;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;"/>
+    </componentReference>
+  </composables>
+  <composables xsi:type="xcore:ComponentInstance" name="AverageMPG" componentType="AverageMPG">
+    <selectedServices name="AverageMPG">
+      <parameters xsi:type="xcore:Input" name="Fuel" dataType="Float" dataChannels="//@dataChannels.4" order="0"/>
+      <parameters xsi:type="xcore:Input" name="Miles" dataType="Float" dataChannels="//@dataChannels.3" order="1"/>
+      <parameters xsi:type="xcore:Output" name="AverageMPG" dataType="Float" dataChannels="//@dataChannels.9" order="2"/>
+    </selectedServices>
+    <componentReference xsi:type="xcore:AtomicComponent" name="AverageMPG">
+      <services name="AverageMPG">
+        <parameters xsi:type="xcore:Input" name="Fuel" dataType="Float" order="0"/>
+        <parameters xsi:type="xcore:Input" name="Miles" dataType="Float" order="1"/>
+        <parameters xsi:type="xcore:Output" name="AverageMPG" dataType="Float" order="0"/>
+      </services>
+      <computationUnit packageName="uk.vcs.atomic" interfaceCode="/*&#xD;&#xA;&#x9;&#x9;* This is Java interface of the component AverageMPG&#xD;&#xA;&#x9;&#x9;*/&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;package uk.vcs.atomic;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;import java.util.*;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;public interface AverageMPG {public  Float  AverageMPG (&#xD;&#xA;    &#x9;&#x9;Float Fuel, &#xD;&#xA;    &#x9;&#x9;    &#x9;&#x9;Float Miles&#xD;&#xA;    &#x9;&#x9; ); &#xD;&#xA;}" sourceCode="/*&#xD;&#xA; * This is Java implementation of the atomic component AverageMPG&#xD;&#xA; */&#xD;&#xA;&#xD;&#xA;package uk.vcs.atomic;&#xD;&#xA;&#xD;&#xA;import java.util.*;&#xD;&#xA;&#xD;&#xA;public class AverageMPGImpl implements AverageMPG {&#xD;&#xA;&#x9;/**&#xD;&#xA;&#x9; * Constructor of atomic component AverageMPG&#xD;&#xA;&#x9; */&#xD;&#xA;&#x9;public AverageMPGImpl() {&#xD;&#xA;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;public Float AverageMPG(Float Fuel, Float Miles) {&#xD;&#xA;&#x9;&#x9;Float AverageMPG = null;&#xD;&#xA;&#x9;&#x9;// TODO: auto-generated code, to be implemented by developers&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;if (Fuel.equals(0)) {&#xD;&#xA;&#x9;&#x9;&#x9;return Float.valueOf(Float.valueOf(0));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;AverageMPG = Miles / Fuel;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return AverageMPG;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;"/>
+    </componentReference>
+  </composables>
+  <composables xsi:type="xcore:ComponentInstance" name="Maintenance" componentType="Maintenance">
+    <selectedServices name="Maintenance">
+      <parameters xsi:type="xcore:Input" name="CumulatedMileages   " dataType="Float" dataChannels="//@dataChannels.7" order="0"/>
+      <parameters xsi:type="xcore:Output" name="Message" dataType="String" dataChannels="//@dataChannels.12" order="1"/>
+    </selectedServices>
+    <componentReference xsi:type="xcore:AtomicComponent" name="Maintenance">
+      <services name="Maintenance">
+        <parameters xsi:type="xcore:Input" name="CumulatedMileages   " dataType="Float" order="0"/>
+        <parameters xsi:type="xcore:Output" name="Message" dataType="String" order="0"/>
+      </services>
+      <computationUnit packageName="uk.vcs.atomic" interfaceCode="/*&#xD;&#xA;&#x9;&#x9;* This is Java interface of the component Maintenance&#xD;&#xA;&#x9;&#x9;*/&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;package uk.vcs.atomic;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;import java.util.*;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;public interface Maintenance {public  String  Maintenance (&#xD;&#xA;    &#x9;&#x9;Float CumulatedMileages   &#xD;&#xA;    &#x9;&#x9; ); &#xD;&#xA;}" sourceCode="/*&#xD;&#xA; * This is Java implementation of the atomic component Maintenance&#xD;&#xA; */&#xD;&#xA;&#xD;&#xA;import java.util.*;&#xD;&#xA;&#xD;&#xA;public class MaintenanceImpl implements Maintenance {&#xD;&#xA;&#x9;/**&#xD;&#xA;&#x9; * Constructor of atomic component Maintenance&#xD;&#xA;&#x9; */&#xD;&#xA;&#x9;public MaintenanceImpl() {&#xD;&#xA;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;public String Maintenance(Float CumulatedMileages) {&#xD;&#xA;&#x9;&#x9;String Message = null;&#xD;&#xA;&#x9;&#x9;// TODO: auto-generated code, to be implemented by developers&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;if (CumulatedMileages >= 1000 &amp;&amp; CumulatedMileages &lt; 5000) {&#xD;&#xA;&#x9;&#x9;&#x9;Message = &quot;Your cumulated mileages have reached &quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;+ String.valueOf(CumulatedMileages)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; miles, please ensure the primary maintenance.&quot;;&#xD;&#xA;&#x9;&#x9;} else if (CumulatedMileages >= 5000 &amp;&amp; CumulatedMileages &lt; 10000) {&#xD;&#xA;&#x9;&#x9;&#x9;Message = &quot;Your cumulated mileages have reached &quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;+ String.valueOf(CumulatedMileages)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; miles, please ensure the secondary maintenance.&quot;;&#xD;&#xA;&#x9;&#x9;} else if (CumulatedMileages > 10000 &amp;&amp; CumulatedMileages &lt; 20000) {&#xD;&#xA;&#x9;&#x9;&#x9;Message = &quot;Your cumulated mileages have reached &quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;+ String.valueOf(CumulatedMileages)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; miles, please ensure the maintenance every 2000 miles&quot;;&#xD;&#xA;&#x9;&#x9;} else {&#xD;&#xA;&#x9;&#x9;&#x9;Message = &quot;Your cumulated mileages have reached &quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;+ String.valueOf(CumulatedMileages)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;+ &quot; miles, please ensure the maintenance every 1000 miles&quot;;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;return Message;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;"/>
+    </componentReference>
+  </composables>
+  <composables xsi:type="xcore:ComponentInstance" name="AutoCruiseControl" componentType="AutoCruiseControl">
+    <selectedServices name="StartCruise">
+      <parameters xsi:type="xcore:Input" name="SelectedSpeed" dataType="Float" dataChannels="//@dataChannels.5" order="0"/>
+      <parameters xsi:type="xcore:Input" name="CurrentSpeed" dataType="Float" dataChannels="//@dataChannels.6" order="1"/>
+      <parameters xsi:type="xcore:Output" name="ThrottlePosition   " dataType="Float" dataChannels="//@dataChannels.10" order="2"/>
+    </selectedServices>
+    <componentReference xsi:type="xcore:CompositeComponent" name="AutoCruiseControl">
+      <services name="StartCruise">
+        <parameters xsi:type="xcore:Input" name="SelectedSpeed" dataChannels="//@composables.3/@componentReference/@dataChannels.4" order="0"/>
+        <parameters xsi:type="xcore:Input" name="CurrentSpeed" dataType="Float" dataChannels="//@composables.3/@componentReference/@dataChannels.5" order="1"/>
+        <parameters xsi:type="xcore:Output" name="ThrottlePosition   " dataType="Float" dataChannels="//@composables.3/@componentReference/@dataChannels.3" order="0"/>
+        <serviceReferences name="FrontDetection.FrontDetection" service="//@composables.3/@componentReference/@composables.0/@selectedServices.0"/>
+        <serviceReferences name="AdaptedSpeed.AdaptedSpeed" service="//@composables.3/@componentReference/@composables.1/@selectedServices.0"/>
+        <serviceReferences name="Throttle.Throttle" service="//@composables.3/@componentReference/@composables.2/@selectedServices.0"/>
+      </services>
+      <composables xsi:type="xcore:ComponentInstance" name="FrontDetection" componentType="FrontDetection">
+        <selectedServices name="FrontDetection">
+          <parameters xsi:type="xcore:Output" name="Distance" dataType="Float" dataChannels="//@composables.3/@componentReference/@dataChannels.0 //@composables.3/@componentReference/@dataChannels.2" order="0"/>
+        </selectedServices>
+        <componentReference xsi:type="xcore:AtomicComponent" name="FrontDetection">
+          <services name="FrontDetection">
+            <parameters xsi:type="xcore:Output" name="Distance" dataType="Float" order="0"/>
+          </services>
+          <computationUnit packageName="uk.vcs.atomic" interfaceCode="/*&#xD;&#xA;&#x9;&#x9;* This is Java interface of the component FrontDetection&#xD;&#xA;&#x9;&#x9;*/&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;package uk.vcs.atomic;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;import java.util.*;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;public interface FrontDetection {public  Float  FrontDetection (&#xD;&#xA; ); &#xD;&#xA;}" sourceCode="/*&#xD;&#xA; * This is Java implementation of the atomic component FrontDetection&#xD;&#xA; */&#xD;&#xA;&#xD;&#xA;import java.util.*;&#xD;&#xA;&#xD;&#xA;public class FrontDetectionImpl implements FrontDetection {&#xD;&#xA;&#x9;/**&#xD;&#xA;&#x9; * Constructor of atomic component FrontDetection&#xD;&#xA;&#x9; */&#xD;&#xA;&#x9;public FrontDetectionImpl() {&#xD;&#xA;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;public Float FrontDetection() {&#xD;&#xA;&#x9;&#x9;Float Distance = null;&#xD;&#xA;&#x9;&#x9;// TODO: auto-generated code, to be implemented by developers&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;Distance = Float.valueOf((float) (Math.random() * 100 + 100));&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return Distance;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;"/>
+        </componentReference>
+      </composables>
+      <composables xsi:type="xcore:ComponentInstance" name="AdaptedSpeed" componentType="AdaptedSpeed">
+        <selectedServices name="AdaptedSpeed">
+          <parameters xsi:type="xcore:Input" name="Distance" dataType="Float" dataChannels="//@composables.3/@componentReference/@dataChannels.0" order="0"/>
+          <parameters xsi:type="xcore:Input" name="SelectedSpeed" dataChannels="//@composables.3/@componentReference/@dataChannels.4" order="1"/>
+          <parameters xsi:type="xcore:Output" name="AdaptedSpeed   " dataChannels="//@composables.3/@componentReference/@dataChannels.1" order="0"/>
+          <parameters xsi:type="xcore:Input" name="CurrentSpeed" dataType="Float" dataChannels="//@composables.3/@componentReference/@dataChannels.5" order="2"/>
+        </selectedServices>
+        <componentReference xsi:type="xcore:AtomicComponent" name="AdaptedSpeed">
+          <services name="AdaptedSpeed">
+            <parameters xsi:type="xcore:Input" name="Distance" dataType="Float" order="0"/>
+            <parameters xsi:type="xcore:Input" name="SelectedSpeed" order="1"/>
+            <parameters xsi:type="xcore:Output" name="AdaptedSpeed   " order="0"/>
+            <parameters xsi:type="xcore:Input" name="CurrentSpeed" dataType="Float" order="2"/>
+          </services>
+          <computationUnit packageName="uk.vcs.atomic" interfaceCode="/*&#xD;&#xA;&#x9;&#x9;* This is Java interface of the component AdaptedSpeed&#xD;&#xA;&#x9;&#x9;*/&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;package uk.vcs.atomic;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;import java.util.*;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;public interface AdaptedSpeed {public  Integer  AdaptedSpeed (&#xD;&#xA;    &#x9;&#x9;Float Distance, &#xD;&#xA;    &#x9;&#x9;    &#x9;&#x9;Integer SelectedSpeed, &#xD;&#xA;    &#x9;&#x9;    &#x9;&#x9;Float CurrentSpeed&#xD;&#xA;    &#x9;&#x9; ); &#xD;&#xA;}" sourceCode="/*&#xD;&#xA; * This is Java implementation of the atomic component AdaptedSpeed&#xD;&#xA; */&#xD;&#xA;&#xD;&#xA;package uk.vcs.atomic;&#xD;&#xA;&#xD;&#xA;import java.util.*;&#xD;&#xA;&#xD;&#xA;public class AdaptedSpeedImpl implements AdaptedSpeed {&#xD;&#xA;&#x9;private Float _CurrentSpeed = Float.valueOf(80);&#xD;&#xA;&#xD;&#xA;&#x9;/**&#xD;&#xA;&#x9; * Constructor of atomic component AdaptedSpeed&#xD;&#xA;&#x9; */&#xD;&#xA;&#x9;public AdaptedSpeedImpl(Map&lt;String, Object> vals) {&#xD;&#xA;&#x9;&#x9;this._CurrentSpeed = (Float) vals.get(&quot;CurrentSpeed&quot;);&#xD;&#xA;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;public Integer AdaptedSpeed(Float Distance, Integer SelectedSpeed) {&#xD;&#xA;&#x9;&#x9;Integer AdaptedSpeed = null;&#xD;&#xA;&#x9;&#x9;// TODO: auto-generated code, to be implemented by developers&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;if (SelectedSpeed &lt;= _CurrentSpeed) {&#xD;&#xA;&#x9;&#x9;&#x9;AdaptedSpeed = SelectedSpeed;&#xD;&#xA;&#x9;&#x9;} else {&#xD;&#xA;&#x9;&#x9;&#x9;Float IncreasedSpeedFloat = (Float.valueOf(SelectedSpeed) - _CurrentSpeed) * 1000 / 3600;&#xD;&#xA;&#x9;&#x9;&#x9;Float timeFloat = Distance / IncreasedSpeedFloat;&#xD;&#xA;&#x9;&#x9;&#x9;if (timeFloat >= 10) {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AdaptedSpeed = SelectedSpeed;&#xD;&#xA;&#x9;&#x9;&#x9;} else {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AdaptedSpeed = Integer.valueOf((int) (Math.ceil((Distance / 10)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;* 3600 / 1000 + _CurrentSpeed)));&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return AdaptedSpeed;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;"/>
+        </componentReference>
+      </composables>
+      <composables xsi:type="xcore:ComponentInstance" name="Throttle" componentType="Throttle">
+        <selectedServices name="Throttle">
+          <parameters xsi:type="xcore:Input" name="Speed" dataChannels="//@composables.3/@componentReference/@dataChannels.1" order="0"/>
+          <parameters xsi:type="xcore:Output" name="ThrottlePosition   " dataType="Float" dataChannels="//@composables.3/@componentReference/@dataChannels.3" order="0"/>
+        </selectedServices>
+        <componentReference xsi:type="xcore:AtomicComponent" name="Throttle">
+          <services name="Throttle">
+            <parameters xsi:type="xcore:Input" name="Speed" order="0"/>
+            <parameters xsi:type="xcore:Output" name="ThrottlePosition   " dataType="Float" order="0"/>
+          </services>
+          <computationUnit packageName="uk.vcs.atomic" interfaceCode="/*&#xD;&#xA;&#x9;&#x9;* This is Java interface of the component Throttle&#xD;&#xA;&#x9;&#x9;*/&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;package uk.vcs.atomic;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;import java.util.*;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;public interface Throttle {public  Float  Throttle (&#xD;&#xA;    &#x9;&#x9;Integer Speed&#xD;&#xA;    &#x9;&#x9; ); &#xD;&#xA;}" sourceCode="/*&#xD;&#xA; * This is Java implementation of the atomic component Throttle&#xD;&#xA; */&#xD;&#xA;&#xD;&#xA;import java.util.*;&#xD;&#xA;&#xD;&#xA;public class ThrottleImpl implements Throttle {&#xD;&#xA;&#x9;/**&#xD;&#xA;&#x9; * Constructor of atomic component Throttle&#xD;&#xA;&#x9; */&#xD;&#xA;&#x9;public ThrottleImpl() {&#xD;&#xA;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;public Float Throttle(Integer Speed) {&#xD;&#xA;&#x9;&#x9;Float ThrottlePosition = null;&#xD;&#xA;&#x9;&#x9;// TODO: auto-generated code, to be implemented by developers&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;ThrottlePosition = Float.valueOf(Speed) / Float.valueOf(8);&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return ThrottlePosition;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;"/>
+        </componentReference>
+      </composables>
+      <composables xsi:type="xcore:Guard" name="Guard" showedName="Guard" connection="//@composables.3/@componentReference/@connections.0">
+        <input name="Distance" dataType="Float" dataChannels="//@composables.3/@componentReference/@dataChannels.2" order="0"/>
+      </composables>
+      <composables xsi:type="xcore:Sequencer" name="Seq" showedName="Seq" connections="//@composables.3/@componentReference/@connections.1 //@composables.3/@componentReference/@connections.2 //@composables.3/@componentReference/@connections.3"/>
+      <connections xsi:type="xcore:CoordinationConnection" condition="Distance>=150" source="//@composables.3/@componentReference/@composables.3" target="//@composables.3/@componentReference/@composables.1"/>
+      <connections xsi:type="xcore:CoordinationConnection" condition="0" source="//@composables.3/@componentReference/@composables.4" target="//@composables.3/@componentReference/@composables.0"/>
+      <connections xsi:type="xcore:CoordinationConnection" condition="1" source="//@composables.3/@componentReference/@composables.4" target="//@composables.3/@componentReference/@composables.3"/>
+      <connections xsi:type="xcore:CoordinationConnection" condition="2" source="//@composables.3/@componentReference/@composables.4" target="//@composables.3/@componentReference/@composables.2"/>
+      <dataChannels source="//@composables.3/@componentReference/@composables.0/@selectedServices.0/@parameters.0" target="//@composables.3/@componentReference/@composables.1/@selectedServices.0/@parameters.0"/>
+      <dataChannels source="//@composables.3/@componentReference/@composables.1/@selectedServices.0/@parameters.2" target="//@composables.3/@componentReference/@composables.2/@selectedServices.0/@parameters.0"/>
+      <dataChannels source="//@composables.3/@componentReference/@composables.0/@selectedServices.0/@parameters.0" target="//@composables.3/@componentReference/@composables.3/@input.0"/>
+      <dataChannels source="//@composables.3/@componentReference/@composables.2/@selectedServices.0/@parameters.1" target="//@composables.3/@componentReference/@services.0/@parameters.2"/>
+      <dataChannels source="//@composables.3/@componentReference/@services.0/@parameters.0" target="//@composables.3/@componentReference/@composables.1/@selectedServices.0/@parameters.1"/>
+      <dataChannels source="//@composables.3/@componentReference/@services.0/@parameters.1" target="//@composables.3/@componentReference/@composables.1/@selectedServices.0/@parameters.3"/>
+    </componentReference>
+  </composables>
+  <composables xsi:type="xcore:ComponentInstance" name="FrontDetection" componentType="FrontDetection">
+    <selectedServices name="FrontDetection">
+      <parameters xsi:type="xcore:Output" name="Distance" dataType="Float" dataChannels="//@dataChannels.11" order="0"/>
+    </selectedServices>
+    <componentReference xsi:type="xcore:AtomicComponent" name="FrontDetection">
+      <services name="FrontDetection">
+        <parameters xsi:type="xcore:Output" name="Distance" dataType="Float" order="0"/>
+      </services>
+      <computationUnit packageName="uk.vcs.atomic" interfaceCode="/*&#xD;&#xA;&#x9;&#x9;* This is Java interface of the component FrontDetection&#xD;&#xA;&#x9;&#x9;*/&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;package uk.vcs.atomic;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;import java.util.*;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;public interface FrontDetection {public  Float  FrontDetection (&#xD;&#xA; ); &#xD;&#xA;}" sourceCode="/*&#xD;&#xA; * This is Java implementation of the atomic component FrontDetection&#xD;&#xA; */&#xD;&#xA;&#xD;&#xA;import java.util.*;&#xD;&#xA;&#xD;&#xA;public class FrontDetectionImpl implements FrontDetection {&#xD;&#xA;&#x9;/**&#xD;&#xA;&#x9; * Constructor of atomic component FrontDetection&#xD;&#xA;&#x9; */&#xD;&#xA;&#x9;public FrontDetectionImpl() {&#xD;&#xA;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;public Float FrontDetection() {&#xD;&#xA;&#x9;&#x9;Float Distance = null;&#xD;&#xA;&#x9;&#x9;// TODO: auto-generated code, to be implemented by developers&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;Distance = Float.valueOf((float) (Math.random() * 100 + 100));&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;return Distance;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;"/>
+    </componentReference>
+  </composables>
+  <composables xsi:type="xcore:Aggregator" name="AGGR0" showedName="AGGR0" connections="//@connections.0 //@connections.1"/>
+  <composables xsi:type="xcore:Selector" name="SEL0" showedName="SEL0" connections="//@connections.2 //@connections.3">
+    <input name="cmd" dataChannels="//@dataChannels.0" order="0"/>
+  </composables>
+  <composables xsi:type="xcore:Aggregator" name="AGGR1" showedName="AGGR1" connections="//@connections.4 //@connections.5"/>
+  <composables xsi:type="xcore:Sequencer" name="SEQ0" showedName="SEQ0" connections="//@connections.6 //@connections.7"/>
+  <composables xsi:type="xcore:Loop" name="LOOP0" showedName="LOOP0" connection="//@connections.8">
+    <input name="lc" dataChannels="//@dataChannels.13" order="0"/>
+  </composables>
+  <connections xsi:type="xcore:CoordinationConnection" source="//@composables.5" target="//@composables.0"/>
+  <connections xsi:type="xcore:CoordinationConnection" source="//@composables.5" target="//@composables.1"/>
+  <connections xsi:type="xcore:CoordinationConnection" condition="cmd == &quot;CAL&quot;" source="//@composables.6" target="//@composables.5"/>
+  <connections xsi:type="xcore:CoordinationConnection" condition="cmd == &quot;OBS&quot;" source="//@composables.6" target="//@composables.2"/>
+  <connections xsi:type="xcore:CoordinationConnection" source="//@composables.7" target="//@composables.3"/>
+  <connections xsi:type="xcore:CoordinationConnection" source="//@composables.7" target="//@composables.4"/>
+  <connections xsi:type="xcore:CoordinationConnection" condition="0" source="//@composables.8" target="//@composables.6"/>
+  <connections xsi:type="xcore:CoordinationConnection" condition="1" source="//@composables.8" target="//@composables.7"/>
+  <connections xsi:type="xcore:CoordinationConnection" condition="lc == true" source="//@composables.9" target="//@composables.8"/>
+  <dataChannels source="//@services.0/@parameters.0" target="//@composables.6/@input.0"/>
+  <dataChannels source="//@services.0/@parameters.1" target="//@composables.0/@selectedServices.0/@parameters.0"/>
+  <dataChannels source="//@services.0/@parameters.2" target="//@composables.0/@selectedServices.0/@parameters.1"/>
+  <dataChannels source="//@services.0/@parameters.2" target="//@composables.1/@selectedServices.0/@parameters.1"/>
+  <dataChannels source="//@services.0/@parameters.3" target="//@composables.1/@selectedServices.0/@parameters.0"/>
+  <dataChannels source="//@services.0/@parameters.4" target="//@composables.3/@selectedServices.0/@parameters.0"/>
+  <dataChannels source="//@services.0/@parameters.5" target="//@composables.3/@selectedServices.0/@parameters.1"/>
+  <dataChannels source="//@services.0/@parameters.6" target="//@composables.2/@selectedServices.0/@parameters.0"/>
+  <dataChannels source="//@composables.0/@selectedServices.0/@parameters.2" target="//@services.0/@parameters.7"/>
+  <dataChannels source="//@composables.1/@selectedServices.0/@parameters.2" target="//@services.0/@parameters.8"/>
+  <dataChannels source="//@composables.3/@selectedServices.0/@parameters.2" target="//@services.0/@parameters.9"/>
+  <dataChannels source="//@composables.4/@selectedServices.0/@parameters.0" target="//@services.0/@parameters.10"/>
+  <dataChannels source="//@composables.2/@selectedServices.0/@parameters.1" target="//@services.0/@parameters.11"/>
+  <dataChannels source="//@dataElements.0" target="//@composables.9/@input.0"/>
+</xcore:CompositeComponent>
